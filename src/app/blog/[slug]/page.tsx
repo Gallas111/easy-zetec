@@ -47,7 +47,7 @@ export async function generateMetadata({
       description: post.meta.description,
       type: "article",
       publishedTime: post.meta.date,
-      images: [{ url: post.meta.image, width: 1200, height: 630 }],
+      images: [{ url: `https://www.easyzetec.com${post.meta.image}`, width: 1200, height: 630, alt: post.meta.title }],
     },
     ...(post.meta.noindex && {
       robots: { index: false, follow: false },

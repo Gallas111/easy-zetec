@@ -1,0 +1,21 @@
+{
+  "name": "쉬운재테크",
+  "short_name": "쉬운재테크",
+  "description": "누구나 쉽게 시작하는 재테크 가이드",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAF8",
+  "theme_color": "#0D9488",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
