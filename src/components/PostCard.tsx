@@ -23,7 +23,7 @@ export default function PostCard({ post, featured = false }: PostCardProps) {
             featured ? "md:w-1/2 h-48 md:h-auto" : "h-48"
           }`}
         >
-          {post.image && post.image !== "/images/default-og.png" ? (
+          {post.image && !post.image.includes("default-og") ? (
             <img
               src={post.image}
               alt={post.title}

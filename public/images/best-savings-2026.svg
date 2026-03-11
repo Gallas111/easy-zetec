@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981"/>
+      <stop offset="100%" style="stop-color:#065F46"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  <circle cx="1050" cy="120" r="220" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="100" cy="550" r="160" fill="rgba(255,255,255,0.05)"/>
+  <!-- Chart bars -->
+  <g transform="translate(780, 150)">
+    <rect x="0" y="200" width="60" height="120" rx="8" fill="rgba(255,255,255,0.15)"/>
+    <text x="30" y="190" font-family="Arial" font-size="14" fill="rgba(255,255,255,0.6)" text-anchor="middle">3.8%</text>
+    <rect x="80" y="160" width="60" height="160" rx="8" fill="rgba(255,255,255,0.2)"/>
+    <text x="110" y="150" font-family="Arial" font-size="14" fill="rgba(255,255,255,0.7)" text-anchor="middle">4.3%</text>
+    <rect x="160" y="120" width="60" height="200" rx="8" fill="rgba(255,255,255,0.25)"/>
+    <text x="190" y="110" font-family="Arial" font-size="14" fill="rgba(255,255,255,0.8)" text-anchor="middle">4.5%</text>
+    <rect x="240" y="80" width="60" height="240" rx="8" fill="rgba(253,224,71,0.4)"/>
+    <text x="270" y="70" font-family="Arial" font-size="16" font-weight="bold" fill="#FCD34D" text-anchor="middle">5.0%</text>
+    <text x="270" y="340" font-family="Arial" font-size="12" fill="rgba(255,255,255,0.5)" text-anchor="middle">TOP</text>
+  </g>
+  <rect x="60" y="50" width="100" height="36" rx="18" fill="rgba(255,255,255,0.2)"/>
+  <text x="110" y="74" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">🏦 저축·예금</text>
+  <text x="80" y="250" font-family="Arial,sans-serif" font-size="56" font-weight="bold" fill="white">2026년 적금 금리</text>
+  <text x="80" y="330" font-family="Arial,sans-serif" font-size="44" font-weight="bold" fill="#FCD34D">가장 높은 금리</text>
+  <text x="80" y="390" font-family="Arial,sans-serif" font-size="44" font-weight="bold" fill="#FCD34D">적금 TOP 5</text>
+  <text x="80" y="450" font-family="Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.7)">2026년 3월 기준 적금 비교 분석</text>
+  <rect x="80" y="500" width="56" height="56" rx="14" fill="rgba(255,255,255,0.2)"/>
+  <text x="108" y="536" font-family="Arial" font-size="28" font-weight="bold" fill="white" text-anchor="middle">Z</text>
+  <text x="150" y="535" font-family="Arial" font-size="18" fill="rgba(255,255,255,0.7)">쉬운재테크</text>
+</svg>

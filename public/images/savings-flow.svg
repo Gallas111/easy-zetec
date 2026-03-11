@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <rect width="800" height="200" rx="16" fill="#F0FDFA"/>
+  <!-- Step 1 -->
+  <rect x="20" y="40" width="160" height="120" rx="12" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <circle cx="100" cy="75" r="20" fill="#0D9488"/>
+  <text x="100" y="82" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">1</text>
+  <text x="100" y="115" font-family="Arial" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">월급 수령</text>
+  <text x="100" y="135" font-family="Arial" font-size="11" fill="#6B7280" text-anchor="middle">급여 통장</text>
+  <!-- Arrow -->
+  <text x="200" y="105" font-family="Arial" font-size="24" fill="#0D9488">→</text>
+  <!-- Step 2 -->
+  <rect x="220" y="40" width="160" height="120" rx="12" fill="white" stroke="#0D9488" stroke-width="2"/>
+  <circle cx="300" cy="75" r="20" fill="#0D9488"/>
+  <text x="300" y="82" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">2</text>
+  <text x="300" y="115" font-family="Arial" font-size="14" font-weight="bold" fill="#0D9488" text-anchor="middle">선저축 (20~30%)</text>
+  <text x="300" y="135" font-family="Arial" font-size="11" fill="#6B7280" text-anchor="middle">자동이체 적금</text>
+  <!-- Arrow -->
+  <text x="400" y="105" font-family="Arial" font-size="24" fill="#0D9488">→</text>
+  <!-- Step 3 -->
+  <rect x="420" y="40" width="160" height="120" rx="12" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <circle cx="500" cy="75" r="20" fill="#6B7280"/>
+  <text x="500" y="82" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">3</text>
+  <text x="500" y="115" font-family="Arial" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">고정 지출</text>
+  <text x="500" y="135" font-family="Arial" font-size="11" fill="#6B7280" text-anchor="middle">월세, 보험, 통신</text>
+  <!-- Arrow -->
+  <text x="600" y="105" font-family="Arial" font-size="24" fill="#0D9488">→</text>
+  <!-- Step 4 -->
+  <rect x="620" y="40" width="160" height="120" rx="12" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <circle cx="700" cy="75" r="20" fill="#6B7280"/>
+  <text x="700" y="82" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">4</text>
+  <text x="700" y="115" font-family="Arial" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">생활비</text>
+  <text x="700" y="135" font-family="Arial" font-size="11" fill="#6B7280" text-anchor="middle">나머지로 생활</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D9488"/>
+      <stop offset="100%" style="stop-color:#134E4A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="100" r="200" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="150" cy="530" r="150" fill="rgba(255,255,255,0.05)"/>
+  <rect x="80" y="60" width="56" height="56" rx="14" fill="rgba(255,255,255,0.2)"/>
+  <text x="108" y="100" font-family="Arial,sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">Z</text>
+  <text x="150" y="97" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="rgba(255,255,255,0.9)">쉬운재테크</text>
+  <text x="80" y="300" font-family="Arial,sans-serif" font-size="64" font-weight="bold" fill="white">누구나 쉽게 시작하는</text>
+  <text x="80" y="380" font-family="Arial,sans-serif" font-size="64" font-weight="bold" fill="#FCD34D">재테크 가이드</text>
+  <text x="80" y="440" font-family="Arial,sans-serif" font-size="24" fill="rgba(255,255,255,0.7)">적금 비교 · ETF 투자 · 연말정산 · 절세 꿀팁</text>
+  <rect x="80" y="520" width="160" height="48" rx="12" fill="white"/>
+  <text x="160" y="551" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#0F766E" text-anchor="middle">글 보러가기</text>
+</svg>

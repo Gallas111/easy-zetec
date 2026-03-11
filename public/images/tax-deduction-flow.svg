@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="280" viewBox="0 0 800 280">
+  <rect width="800" height="280" rx="16" fill="#FFFBEB"/>
+  <text x="400" y="35" font-family="Arial" font-size="16" font-weight="bold" fill="#92400E" text-anchor="middle">연말정산 환급 구조</text>
+  <!-- 원천징수 -->
+  <rect x="30" y="60" width="200" height="90" rx="12" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="130" y="90" font-family="Arial" font-size="14" font-weight="bold" fill="#1F2937" text-anchor="middle">매월 원천징수</text>
+  <text x="130" y="115" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">급여에서 세금 미리 납부</text>
+  <text x="130" y="138" font-family="Arial" font-size="18" fill="#DC2626" text-anchor="middle">-₩○○만원/월</text>
+  <!-- Arrow -->
+  <text x="250" y="110" font-family="Arial" font-size="28" fill="#F59E0B">→</text>
+  <!-- 연말정산 -->
+  <rect x="280" y="60" width="200" height="90" rx="12" fill="white" stroke="#F59E0B" stroke-width="2"/>
+  <text x="380" y="90" font-family="Arial" font-size="14" font-weight="bold" fill="#F59E0B" text-anchor="middle">연말정산 (1월)</text>
+  <text x="380" y="115" font-family="Arial" font-size="12" fill="#6B7280" text-anchor="middle">실제 세금 vs 납부액 비교</text>
+  <text x="380" y="138" font-family="Arial" font-size="14" fill="#92400E" text-anchor="middle">공제 항목 적용</text>
+  <!-- Arrow -->
+  <text x="500" y="110" font-family="Arial" font-size="28" fill="#F59E0B">→</text>
+  <!-- 환급 -->
+  <rect x="530" y="60" width="240" height="90" rx="12" fill="#0D9488" stroke="none"/>
+  <text x="650" y="90" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">13월의 월급! 💰</text>
+  <text x="650" y="115" font-family="Arial" font-size="12" fill="rgba(255,255,255,0.8)" text-anchor="middle">더 낸 세금을 돌려받음</text>
+  <text x="650" y="140" font-family="Arial" font-size="20" font-weight="bold" fill="#FCD34D" text-anchor="middle">+₩148.5만원</text>
+  <!-- Bottom tips -->
+  <rect x="30" y="175" width="740" height="85" rx="12" fill="white" stroke="#E5E7EB" stroke-width="1.5"/>
+  <text x="60" y="200" font-family="Arial" font-size="13" font-weight="bold" fill="#0D9488">💡 환급 극대화 공식</text>
+  <text x="60" y="225" font-family="Arial" font-size="12" fill="#374151">1~6월: 신용카드로 25% 기본한도 채우기</text>
+  <text x="400" y="225" font-family="Arial" font-size="12" fill="#374151">7~12월: 체크카드/현금영수증 (30% 공제)</text>
+  <text x="60" y="248" font-family="Arial" font-size="12" fill="#374151">연중: IRP/연금저축 900만원 납입</text>
+  <text x="400" y="248" font-family="Arial" font-size="12" fill="#374151">12월: 공제 항목 점검 및 추가 납입</text>
+</svg>
