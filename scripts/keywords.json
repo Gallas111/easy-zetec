@@ -1,0 +1,17 @@
+[
+  {"mainKeyword": "재테크 시작", "slug": "jaetec-start-guide", "category": "basics", "createdAt": "2026-03-10"},
+  {"mainKeyword": "적금 금리 비교", "slug": "best-savings-2026", "category": "savings", "createdAt": "2026-03-11"},
+  {"mainKeyword": "ETF 투자", "slug": "etf-beginner-guide", "category": "investing", "createdAt": "2026-03-09"},
+  {"mainKeyword": "연말정산", "slug": "year-end-tax-settlement", "category": "tax", "createdAt": "2026-03-08"},
+  {"mainKeyword": "월급 관리", "slug": "monthly-budget-guide", "category": "basics", "createdAt": "2026-03-12"},
+  {"mainKeyword": "재테크 용어", "slug": "financial-terms-for-beginners", "category": "basics", "createdAt": "2026-03-12"},
+  {"mainKeyword": "파킹통장", "slug": "parking-account-guide", "category": "savings", "createdAt": "2026-03-12"},
+  {"mainKeyword": "비상금", "slug": "emergency-fund-guide", "category": "savings", "createdAt": "2026-03-12"},
+  {"mainKeyword": "주식 계좌 개설", "slug": "stock-account-guide", "category": "investing", "createdAt": "2026-03-12"},
+  {"mainKeyword": "적립식 투자", "slug": "dollar-cost-averaging", "category": "investing", "createdAt": "2026-03-12"},
+  {"mainKeyword": "ISA 계좌", "slug": "isa-account-guide", "category": "tax", "createdAt": "2026-03-12"},
+  {"mainKeyword": "종합소득세", "slug": "income-tax-brackets", "category": "tax", "createdAt": "2026-03-12"},
+  {"mainKeyword": "전세 월세 비교", "slug": "jeonse-vs-monthly-rent", "category": "real-estate", "createdAt": "2026-03-12"},
+  {"mainKeyword": "첫 주택 구매", "slug": "first-home-buying-guide", "category": "real-estate", "createdAt": "2026-03-12"},
+  {"mainKeyword": "청약통장", "slug": "housing-subscription-guide", "category": "real-estate", "createdAt": "2026-03-12"}
+]

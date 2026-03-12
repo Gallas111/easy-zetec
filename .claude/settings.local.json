@@ -6,7 +6,10 @@
       "WebFetch(domain:easyzetec.com)",
       "Bash(cd \"/c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && npx tsx scripts/generate-images.ts 2>&1)",
       "Bash(cd \"/c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && npm run build 2>&1 | tail -20)",
-      "Bash(cd \"/c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && npm run build 2>&1 | tail -25)"
+      "Bash(cd \"/c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && npm run build 2>&1 | tail -25)",
+      "Bash(cd \"C:/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && echo \"=== Scripts ===\" && ls scripts/ && echo \"=== Scripts/utils ===\" && ls scripts/utils/ && echo \"=== Workflows ===\" && ls .github/workflows/ && echo \"=== Package scripts ===\" && node -e \"const p=require\\('./package.json'\\); console.log\\(Object.keys\\(p.scripts\\).join\\(', '\\)\\)\")",
+      "Bash(cd \"/c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && npm install @google/generative-ai dotenv 2>&1 | tail -5)",
+      "Bash(cd \"/c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && npm run build 2>&1 | tail -10)"
     ]
   }
 }
