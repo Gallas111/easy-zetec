@@ -100,5 +100,35 @@
     "slug": "split-accounts",
     "category": "basics",
     "createdAt": "2026-03-12"
+  },
+  {
+    "mainKeyword": "목돈 모으기",
+    "slug": "saving-lump-sum",
+    "category": "savings",
+    "createdAt": "2026-03-12"
+  },
+  {
+    "mainKeyword": "비상금 통장 추천",
+    "slug": "best-emergency-fund-account",
+    "category": "savings",
+    "createdAt": "2026-03-12"
+  },
+  {
+    "mainKeyword": "예금 금리 비교",
+    "slug": "savings-rate-compare",
+    "category": "savings",
+    "createdAt": "2026-03-12"
+  },
+  {
+    "mainKeyword": "적금 풍차 돌리기",
+    "slug": "windmill-savings",
+    "category": "savings",
+    "createdAt": "2026-03-12"
+  },
+  {
+    "mainKeyword": "CMA 통장 추천",
+    "slug": "cma-best-account",
+    "category": "savings",
+    "createdAt": "2026-03-12"
   }
 ]
