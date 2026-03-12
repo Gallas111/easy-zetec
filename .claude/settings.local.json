@@ -9,7 +9,12 @@
       "Bash(cd \"/c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && npm run build 2>&1 | tail -25)",
       "Bash(cd \"C:/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && echo \"=== Scripts ===\" && ls scripts/ && echo \"=== Scripts/utils ===\" && ls scripts/utils/ && echo \"=== Workflows ===\" && ls .github/workflows/ && echo \"=== Package scripts ===\" && node -e \"const p=require\\('./package.json'\\); console.log\\(Object.keys\\(p.scripts\\).join\\(', '\\)\\)\")",
       "Bash(cd \"/c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && npm install @google/generative-ai dotenv 2>&1 | tail -5)",
-      "Bash(cd \"/c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && npm run build 2>&1 | tail -10)"
+      "Bash(cd \"/c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && npm run build 2>&1 | tail -10)",
+      "Bash(cd \"/c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && gh secret list 2>&1)",
+      "Read(//c/Users/owner/OneDrive/바탕 화면/사이트/ai-blog/**)",
+      "Bash(gh secret:*)",
+      "Bash(cd \"/c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && gh workflow run daily-content.yml 2>&1)",
+      "Bash(cd \"C:/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && npm install googleapis nodemailer marked @types/nodemailer)"
     ]
   }
 }

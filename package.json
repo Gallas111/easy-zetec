@@ -10,15 +10,20 @@
     "blog:generate": "npx tsx scripts/generate-seo-post.ts",
     "blog:refine": "npx tsx scripts/content-refiner.ts",
     "blog:link": "npx tsx scripts/internal-linker.ts",
-    "blog:health": "npx tsx scripts/health-check.ts"
+    "blog:health": "npx tsx scripts/health-check.ts",
+    "growth:report": "npx tsx scripts/generate-focused-report.ts"
   },
   "dependencies": {
     "@giscus/react": "^3.1.0",
     "@google/generative-ai": "^0.24.1",
+    "@types/nodemailer": "^7.0.11",
     "dotenv": "^17.3.1",
+    "googleapis": "^171.4.0",
     "gray-matter": "^4.0.3",
+    "marked": "^17.0.4",
     "next": "^15.5.12",
     "next-mdx-remote": "^6.0.0",
+    "nodemailer": "^8.0.2",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "rehype-highlight": "^7.0.2",
