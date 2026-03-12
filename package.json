@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npx tsx scripts/generate-images.ts && npx tsx scripts/generate-sitemap.ts && npx next build",
+    "build": "npx tsx scripts/generate-images.ts && npx tsx scripts/generate-sitemap.ts && npx tsx scripts/generate-rss.ts && npx next build",
     "start": "next start",
     "lint": "eslint"
   },

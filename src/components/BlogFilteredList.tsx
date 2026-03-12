@@ -4,6 +4,7 @@ import { useState } from "react";
 import { PostMeta } from "@/lib/mdx";
 import { Category } from "@/lib/categories";
 import PostCard from "./PostCard";
+import SearchBar from "./SearchBar";
 
 interface Props {
   posts: PostMeta[];
@@ -19,6 +20,17 @@ export default function BlogFilteredList({ posts, categories }: Props) {
 
   return (
     <>
+      {/* Search Bar */}
+      <SearchBar
+        posts={posts.map((p) => ({
+          slug: p.slug,
+          title: p.title,
+          description: p.description,
+          category: p.category,
+          tags: p.tags,
+        }))}
+      />
+
       {/* Category Filter Pills */}
       <div className="flex flex-wrap gap-2 mb-8">
         <button

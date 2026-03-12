@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/manifest.json",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "ko_KR",
@@ -98,6 +101,7 @@ export default function RootLayout({
         <link rel="icon" href="/icon-16x16.png" sizes="16x16" type="image/png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="alternate" type="application/rss+xml" title="쉬운재테크 RSS" href="/rss.xml" />
         <meta name="google-site-verification" content="CTE7IlDhB9EWswa-1uO4R_P0mgl96dLTIKrYQWczf-A" />
         <meta name="naver-site-verification" content="d29fbbad151bce7158310a25af19168e476a7707" />
         <meta name="google-adsense-account" content="ca-pub-1022869499967960" />

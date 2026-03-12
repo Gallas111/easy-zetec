@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "전체 글 - 재테크 가이드 모아보기",
   description:
     "저축, 투자, 절세, 부동산 등 재테크에 필요한 모든 정보를 카테고리별로 모아보세요.",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 export default function BlogPage() {

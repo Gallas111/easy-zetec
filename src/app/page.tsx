@@ -1,7 +1,14 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/mdx";
 import { categories } from "@/lib/categories";
 import PostCard from "@/components/PostCard";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function HomePage() {
   const allPosts = getAllPosts().filter((p) => !p.noindex);
