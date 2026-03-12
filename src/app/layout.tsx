@@ -98,6 +98,7 @@ export default function RootLayout({
         <link rel="icon" href="/icon-16x16.png" sizes="16x16" type="image/png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
+        <meta name="google-site-verification" content="CTE7IlDhB9EWswa-1uO4R_P0mgl96dLTIKrYQWczf-A" />
         <meta name="theme-color" content="#0D9488" />
         <meta name="msapplication-TileColor" content="#0D9488" />
         <script
