@@ -91,10 +91,25 @@ jobs:
         if: success()
         continue-on-error: true
         run: |
+          POST_SLUGS="${{ steps.generate.outputs.POST_SLUGS }}"
+          POST_COUNT="${{ steps.generate.outputs.POST_COUNT }}"
+
+          if [ -z "$POST_SLUGS" ]; then
+            MSG="✅ <b>[쉬운재테크] 자동화 완료</b>%0A새로 생성된 포스트가 없습니다."
+          else
+            LINKS=""
+            IFS=',' read -ra SLUGS <<< "$POST_SLUGS"
+            for i in "${!SLUGS[@]}"; do
+              NUM=$((i + 1))
+              LINKS="${LINKS}%0A${NUM}. https://www.easyzetec.com/blog/${SLUGS[$i]}"
+            done
+            MSG="✅ <b>[쉬운재테크] ${POST_COUNT}개 포스트 발행 완료!</b>${LINKS}"
+          fi
+
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
             -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
             -d parse_mode="HTML" \
-            -d text="✅ <b>콘텐츠 생성 완료!</b>%0A%0A📝 생성된 포스트: ${{ steps.generate.outputs.POST_COUNT || '0' }}개%0A📄 슬러그: ${{ steps.generate.outputs.POST_SLUGS || 'none' }}%0A🌐 https://www.easyzetec.com"
+            --data-urlencode "text=${MSG}"
 
       - name: Send failure notification
         if: failure()
