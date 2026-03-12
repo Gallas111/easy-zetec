@@ -100,6 +100,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="google-site-verification" content="CTE7IlDhB9EWswa-1uO4R_P0mgl96dLTIKrYQWczf-A" />
         <meta name="naver-site-verification" content="d29fbbad151bce7158310a25af19168e476a7707" />
+        <meta name="google-adsense-account" content="ca-pub-1022869499967960" />
         <meta name="theme-color" content="#0D9488" />
         <meta name="msapplication-TileColor" content="#0D9488" />
         <script
