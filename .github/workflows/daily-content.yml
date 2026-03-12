@@ -41,13 +41,13 @@ jobs:
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
             -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
             -d parse_mode="HTML" \
-            -d text="🚀 <b>쉬운재테크 블로그</b>%0A%0A콘텐츠 자동 생성을 시작합니다.%0A📝 목표: ${{ github.event.inputs.post_count || '2' }}개 포스트%0A🌐 https://www.easyzetec.com"
+            -d text="🚀 <b>쉬운재테크 블로그</b>%0A%0A콘텐츠 자동 생성을 시작합니다.%0A📝 목표: ${{ github.event.inputs.post_count || '5' }}개 포스트%0A🌐 https://www.easyzetec.com"
 
       - name: Generate blog posts
         id: generate
         run: npx tsx scripts/generate-seo-post.ts
         env:
-          POST_COUNT: ${{ github.event.inputs.post_count || '2' }}
+          POST_COUNT: ${{ github.event.inputs.post_count || '5' }}
 
       - name: Refine content
         if: steps.generate.outputs.POST_COUNT != '0'
