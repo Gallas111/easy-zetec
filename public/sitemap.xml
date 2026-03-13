@@ -91,6 +91,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.easyzetec.com/blog/blue-chip-investment</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.easyzetec.com/blog/dividend-etf</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.easyzetec.com/blog/dollar-cost-averaging</loc>
     <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -99,6 +111,24 @@
   <url>
     <loc>https://www.easyzetec.com/blog/etf-beginner-guide</loc>
     <lastmod>2026-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.easyzetec.com/blog/how-to-buy-stocks</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.easyzetec.com/blog/how-to-pick-stocks</loc>
+    <lastmod>2026-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.easyzetec.com/blog/retirement-pension</loc>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

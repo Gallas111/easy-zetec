@@ -130,5 +130,35 @@
     "slug": "cma-best-account",
     "category": "savings",
     "createdAt": "2026-03-12"
+  },
+  {
+    "mainKeyword": "주식 사는 법",
+    "slug": "how-to-buy-stocks",
+    "category": "investing",
+    "createdAt": "2026-03-13"
+  },
+  {
+    "mainKeyword": "우량주 투자",
+    "slug": "blue-chip-investment",
+    "category": "investing",
+    "createdAt": "2026-03-13"
+  },
+  {
+    "mainKeyword": "퇴직연금",
+    "slug": "retirement-pension",
+    "category": "investing",
+    "createdAt": "2026-03-13"
+  },
+  {
+    "mainKeyword": "주식 고르는 법",
+    "slug": "how-to-pick-stocks",
+    "category": "investing",
+    "createdAt": "2026-03-13"
+  },
+  {
+    "mainKeyword": "배당 ETF",
+    "slug": "dividend-etf",
+    "category": "investing",
+    "createdAt": "2026-03-13"
   }
 ]
