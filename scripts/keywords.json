@@ -160,5 +160,35 @@
     "slug": "dividend-etf",
     "category": "investing",
     "createdAt": "2026-03-13"
+  },
+  {
+    "mainKeyword": "소득공제 세액공제 차이",
+    "slug": "income-deduction-vs-tax-credit",
+    "category": "tax",
+    "createdAt": "2026-03-14"
+  },
+  {
+    "mainKeyword": "연금저축",
+    "slug": "pension-savings",
+    "category": "tax",
+    "createdAt": "2026-03-14"
+  },
+  {
+    "mainKeyword": "월세 세액공제",
+    "slug": "rent-tax-deduction",
+    "category": "tax",
+    "createdAt": "2026-03-14"
+  },
+  {
+    "mainKeyword": "신용카드 소득공제",
+    "slug": "credit-card-income-deduction",
+    "category": "tax",
+    "createdAt": "2026-03-14"
+  },
+  {
+    "mainKeyword": "의료비 세액공제",
+    "slug": "medical-expense-tax-credit",
+    "category": "tax",
+    "createdAt": "2026-03-14"
   }
 ]
