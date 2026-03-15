@@ -190,5 +190,29 @@
     "slug": "medical-expense-tax-credit",
     "category": "tax",
     "createdAt": "2026-03-14"
+  },
+  {
+    "mainKeyword": "전세사기 예방법",
+    "slug": "jeonse-fraud-prevention",
+    "category": "real-estate",
+    "createdAt": "2026-03-15"
+  },
+  {
+    "mainKeyword": "주택담보대출 종류",
+    "slug": "home-loan-types",
+    "category": "real-estate",
+    "createdAt": "2026-03-15"
+  },
+  {
+    "mainKeyword": "전입신고 확정일자",
+    "slug": "resident-registration-date",
+    "category": "real-estate",
+    "createdAt": "2026-03-15"
+  },
+  {
+    "mainKeyword": "내 집 마련 비용",
+    "slug": "buy-house-cost",
+    "category": "real-estate",
+    "createdAt": "2026-03-15"
   }
 ]
