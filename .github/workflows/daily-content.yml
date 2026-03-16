@@ -80,6 +80,13 @@ jobs:
           생성된 포스트: ${{ steps.generate.outputs.POST_SLUGS || 'none' }}"
           git push
 
+      - name: Trigger Cloudflare Pages deploy
+        if: steps.generate.outputs.POST_COUNT != '0'
+        continue-on-error: true
+        run: |
+          curl -s -X POST "${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}"
+          echo "Cloudflare Pages deploy triggered"
+
       - name: Ping Google Sitemap
         if: steps.generate.outputs.POST_COUNT != '0'
         continue-on-error: true

@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import { callGemini } from './utils/ai-utils';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content');
-const REFINED_MARKER = '<!-- refined -->';
+const REFINED_MARKER = 'refined';
 
 // ── Find unrefined posts ───────────────────────────────
 function getUnrefinedPosts(): { filePath: string; slug: string }[] {
@@ -22,8 +22,9 @@ function getUnrefinedPosts(): { filePath: string; slug: string }[] {
       const filePath = path.join(catDir, file);
       const content = fs.readFileSync(filePath, 'utf-8');
 
-      // Skip already refined
-      if (content.includes(REFINED_MARKER)) continue;
+      // Skip already refined (check frontmatter)
+      const { data } = matter(content);
+      if (data.refined) continue;
 
       // Check if recently created (within 24 hours)
       const stat = fs.statSync(filePath);
@@ -91,10 +92,11 @@ ${raw}
     refinedFrontmatter.author = frontmatter.author;
     refinedFrontmatter.date = frontmatter.date;
     refinedFrontmatter.category = frontmatter.category;
+    refinedFrontmatter.refined = true;
 
     // Reconstruct the file
     const { content: refinedContent } = matter(refined);
-    const finalContent = matter.stringify(refinedContent + '\n' + REFINED_MARKER + '\n', refinedFrontmatter);
+    const finalContent = matter.stringify(refinedContent + '\n', refinedFrontmatter);
 
     fs.writeFileSync(filePath, finalContent, 'utf-8');
     return true;
