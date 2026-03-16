@@ -214,5 +214,35 @@
     "slug": "buy-house-cost",
     "category": "real-estate",
     "createdAt": "2026-03-15"
+  },
+  {
+    "mainKeyword": "짠테크",
+    "slug": "jjantech",
+    "category": "basics",
+    "createdAt": "2026-03-16"
+  },
+  {
+    "mainKeyword": "신용점수 올리는 법",
+    "slug": "increase-credit-score",
+    "category": "basics",
+    "createdAt": "2026-03-16"
+  },
+  {
+    "mainKeyword": "사회초년생 재테크",
+    "slug": "early-career-finance",
+    "category": "basics",
+    "createdAt": "2026-03-16"
+  },
+  {
+    "mainKeyword": "생활비 줄이기",
+    "slug": "reducing-living-expenses",
+    "category": "basics",
+    "createdAt": "2026-03-16"
+  },
+  {
+    "mainKeyword": "종잣돈 모으기",
+    "slug": "save-seed-money",
+    "category": "basics",
+    "createdAt": "2026-03-16"
   }
 ]
