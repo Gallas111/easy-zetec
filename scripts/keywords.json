@@ -244,5 +244,35 @@
     "slug": "save-seed-money",
     "category": "basics",
     "createdAt": "2026-03-16"
+  },
+  {
+    "mainKeyword": "청약 점수 높이는 법",
+    "slug": "increase-housing-subscription-score",
+    "category": "real-estate",
+    "createdAt": "2026-03-17"
+  },
+  {
+    "mainKeyword": "생애최초 주택구입 대출",
+    "slug": "first-time-home-loan",
+    "category": "real-estate",
+    "createdAt": "2026-03-17"
+  },
+  {
+    "mainKeyword": "부동산 매매 절차",
+    "slug": "property-sale-steps",
+    "category": "real-estate",
+    "createdAt": "2026-03-17"
+  },
+  {
+    "mainKeyword": "전세 보증금 반환",
+    "slug": "jeonse-refund",
+    "category": "real-estate",
+    "createdAt": "2026-03-17"
+  },
+  {
+    "mainKeyword": "전세자금대출",
+    "slug": "jeonse-fund-loan",
+    "category": "real-estate",
+    "createdAt": "2026-03-17"
   }
 ]
