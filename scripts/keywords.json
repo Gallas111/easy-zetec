@@ -274,5 +274,35 @@
     "slug": "jeonse-fund-loan",
     "category": "real-estate",
     "createdAt": "2026-03-17"
+  },
+  {
+    "mainKeyword": "파킹통장 금리 비교",
+    "slug": "parking-rates-compare",
+    "category": "savings",
+    "createdAt": "2026-03-18"
+  },
+  {
+    "mainKeyword": "자동 저축",
+    "slug": "auto-savings",
+    "category": "savings",
+    "createdAt": "2026-03-18"
+  },
+  {
+    "mainKeyword": "적금 추천",
+    "slug": "recommended-savings",
+    "category": "savings",
+    "createdAt": "2026-03-18"
+  },
+  {
+    "mainKeyword": "청년도약계좌",
+    "slug": "youth-leap-account",
+    "category": "savings",
+    "createdAt": "2026-03-18"
+  },
+  {
+    "mainKeyword": "선저축 후지출",
+    "slug": "save-then-spend",
+    "category": "savings",
+    "createdAt": "2026-03-18"
   }
 ]

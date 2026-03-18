@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="pg_savings" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981"/>
+      <stop offset="100%" style="stop-color:#065F46"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#pg_savings)"/>
+  <circle cx="1000" cy="150" r="250" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="200" cy="500" r="180" fill="rgba(255,255,255,0.05)"/>
+  <rect x="60" y="50" width="120" height="36" rx="18" fill="rgba(255,255,255,0.2)"/>
+  <text x="120" y="74" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">🏦 저축/예금</text>
+  <text x="80" y="260" font-family="Arial,sans-serif" font-size="54" font-weight="bold" fill="white">5년 만에 5천만원? 청년도약계좌로 목돈</text>
+  <text x="80" y="340" font-family="Arial,sans-serif" font-size="48" font-weight="bold" fill="#FCD34D">만드는 확실한 비법 (초보 필독!)</text>
+  <text x="80" y="420" font-family="Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.7)">청년도약계좌는 정부 지원으로 젊은 세대가 목돈을 마련할 수 있도록 돕는 ...</text>
+  <rect x="80" y="510" width="56" height="56" rx="14" fill="rgba(255,255,255,0.2)"/>
+  <text x="108" y="546" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">Z</text>
+  <text x="150" y="545" font-family="Arial,sans-serif" font-size="18" fill="rgba(255,255,255,0.7)">쉬운재테크</text>
+</svg>
