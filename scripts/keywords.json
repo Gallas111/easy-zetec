@@ -304,5 +304,35 @@
     "slug": "save-then-spend",
     "category": "savings",
     "createdAt": "2026-03-18"
+  },
+  {
+    "mainKeyword": "펀드 투자",
+    "slug": "fund-investment",
+    "category": "investing",
+    "createdAt": "2026-03-19"
+  },
+  {
+    "mainKeyword": "소액 투자",
+    "slug": "small-investment",
+    "category": "investing",
+    "createdAt": "2026-03-19"
+  },
+  {
+    "mainKeyword": "주식 초보",
+    "slug": "stock-beginner",
+    "category": "investing",
+    "createdAt": "2026-03-19"
+  },
+  {
+    "mainKeyword": "포트폴리오 만들기",
+    "slug": "portfolio-making",
+    "category": "investing",
+    "createdAt": "2026-03-19"
+  },
+  {
+    "mainKeyword": "채권 투자",
+    "slug": "bond-investment",
+    "category": "investing",
+    "createdAt": "2026-03-19"
   }
 ]
