@@ -334,5 +334,35 @@
     "slug": "bond-investment",
     "category": "investing",
     "createdAt": "2026-03-19"
+  },
+  {
+    "mainKeyword": "주택청약저축 소득공제",
+    "slug": "housing-subscription-deduction",
+    "category": "tax",
+    "createdAt": "2026-03-20"
+  },
+  {
+    "mainKeyword": "취득세 감면",
+    "slug": "acquisition-tax-reduction",
+    "category": "tax",
+    "createdAt": "2026-03-20"
+  },
+  {
+    "mainKeyword": "비과세 상품 종류",
+    "slug": "tax-free-product-types",
+    "category": "tax",
+    "createdAt": "2026-03-20"
+  },
+  {
+    "mainKeyword": "주택대출 세금혜택",
+    "slug": "mortgage-tax-benefit",
+    "category": "tax",
+    "createdAt": "2026-03-20"
+  },
+  {
+    "mainKeyword": "세금 환급",
+    "slug": "tax-refund",
+    "category": "tax",
+    "createdAt": "2026-03-20"
   }
 ]
