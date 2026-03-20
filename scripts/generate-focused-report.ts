@@ -225,7 +225,7 @@ async function generateGeminiInsights(gscData: any, ga4Data: any): Promise<strin
     }
 
     const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
     const prompt = `
 당신은 한국 금융/재테크 블로그 "쉬운재테크" (https://www.easyzetec.com)의 SEO 및 성장 분석 전문가입니다.
@@ -461,10 +461,31 @@ async function main() {
 
     // Step 2: Fetch GSC data
     console.log('[2/4] Search Console 데이터 수집 중...');
-    const gscData = await fetchSearchConsoleData(authClient);
-    console.log(`  - 현재 키워드: ${gscData.currentQueries.length}개`);
-    console.log(`  - 이전 키워드: ${gscData.prevQueries.length}개`);
-    console.log(`  - 현재 페이지: ${gscData.currentPages.length}개`);
+    let gscData;
+    try {
+        gscData = await fetchSearchConsoleData(authClient);
+        console.log(`  - 현재 키워드: ${gscData.currentQueries.length}개`);
+        console.log(`  - 이전 키워드: ${gscData.prevQueries.length}개`);
+        console.log(`  - 현재 페이지: ${gscData.currentPages.length}개`);
+    } catch (error: any) {
+        console.warn(`  ⚠️ GSC 데이터 수집 실패 (${error.code || error.message}). GA4 데이터만으로 리포트를 생성합니다.`);
+        const now = new Date();
+        const threeDaysAgo = new Date();
+        threeDaysAgo.setDate(now.getDate() - 3);
+        const sixDaysAgo = new Date();
+        sixDaysAgo.setDate(now.getDate() - 6);
+        const fmt = (d: Date) => d.toISOString().split('T')[0];
+        gscData = {
+            currentQueries: [],
+            prevQueries: [],
+            currentPages: [],
+            prevPages: [],
+            period: {
+                current: `${fmt(threeDaysAgo)} ~ ${fmt(now)}`,
+                previous: `${fmt(sixDaysAgo)} ~ ${fmt(threeDaysAgo)}`,
+            },
+        };
+    }
 
     // Step 3: Fetch GA4 data
     console.log('[3/4] GA4 데이터 수집 중...');
