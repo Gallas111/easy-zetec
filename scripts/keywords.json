@@ -364,5 +364,35 @@
     "slug": "tax-refund",
     "category": "tax",
     "createdAt": "2026-03-20"
+  },
+  {
+    "mainKeyword": "고정지출 변동지출",
+    "slug": "fixed-variable-expenses",
+    "category": "basics",
+    "createdAt": "2026-03-21"
+  },
+  {
+    "mainKeyword": "부수입",
+    "slug": "side-income",
+    "category": "basics",
+    "createdAt": "2026-03-21"
+  },
+  {
+    "mainKeyword": "월급으로 돈 모으는 법",
+    "slug": "how-to-save-money-salary",
+    "category": "basics",
+    "createdAt": "2026-03-21"
+  },
+  {
+    "mainKeyword": "재테크 목표 세우기",
+    "slug": "set-financial-goals",
+    "category": "basics",
+    "createdAt": "2026-03-21"
+  },
+  {
+    "mainKeyword": "순자산",
+    "slug": "net-worth",
+    "category": "basics",
+    "createdAt": "2026-03-21"
   }
 ]

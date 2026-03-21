@@ -73,8 +73,20 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.easyzetec.com/blog/fixed-variable-expenses</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.easyzetec.com/blog/how-to-budget-book</loc>
     <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.easyzetec.com/blog/how-to-save-money-salary</loc>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -103,6 +115,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.easyzetec.com/blog/net-worth</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.easyzetec.com/blog/reducing-living-expenses</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -111,6 +129,18 @@
   <url>
     <loc>https://www.easyzetec.com/blog/save-seed-money</loc>
     <lastmod>2026-03-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.easyzetec.com/blog/set-financial-goals</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.easyzetec.com/blog/side-income</loc>
+    
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
