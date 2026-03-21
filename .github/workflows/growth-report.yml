@@ -2,7 +2,7 @@ name: 3-Day Growth Report
 
 on:
   schedule:
-    - cron: '0 15 */3 * *'  # 3일마다 KST 00:00
+    - cron: '0 15 * * 1'  # 매주 월요일 KST 00:00
   workflow_dispatch:
 
 jobs:
