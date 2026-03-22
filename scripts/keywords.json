@@ -394,5 +394,35 @@
     "slug": "net-worth",
     "category": "basics",
     "createdAt": "2026-03-21"
+  },
+  {
+    "mainKeyword": "부동산 소액 투자",
+    "slug": "real-estate-small-invest",
+    "category": "real-estate",
+    "createdAt": "2026-03-22"
+  },
+  {
+    "mainKeyword": "부동산 투자 공부",
+    "slug": "real-estate-investment-study",
+    "category": "real-estate",
+    "createdAt": "2026-03-22"
+  },
+  {
+    "mainKeyword": "전세 보증보험",
+    "slug": "jeonse-guarantee-insurance",
+    "category": "real-estate",
+    "createdAt": "2026-03-22"
+  },
+  {
+    "mainKeyword": "내 집 마련 종잣돈",
+    "slug": "home-buying-seed-money",
+    "category": "real-estate",
+    "createdAt": "2026-03-22"
+  },
+  {
+    "mainKeyword": "리츠 투자",
+    "slug": "reits-investment",
+    "category": "real-estate",
+    "createdAt": "2026-03-22"
   }
 ]
