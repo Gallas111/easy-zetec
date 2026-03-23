@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="590" viewBox="0 0 800 590">
+  <defs>
+    <linearGradient id="ibg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1a3d"/>
+      <stop offset="100%" style="stop-color:#1e3a5f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="590" rx="16" fill="url(#ibg)"/>
+  <circle cx="720" cy="60" r="120" fill="rgba(59,130,246,0.03)"/>
+
+  <rect x="40" y="30" width="8" height="36" rx="4" fill="#3B82F6"/>
+  <text x="60" y="58" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" font-weight="bold" fill="white">월급날 순삭은 이제 그만! 초보도 따라하는 '돈 모으는 8가지 ...</text>
+  <text x="40" y="95" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.4)">이 글에서 다루는 핵심 내용</text>
+
+  
+    <rect x="40" y="130" width="720" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(59,130,246,0.15)" stroke-width="1"/>
+    <rect x="40" y="130" width="6" height="72" rx="3" fill="#FBBF24"/>
+    <text x="72" y="172" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">구체적인 목표를 세우세요: &quot;나는 왜 돈을 모...</text>
+    <text x="730" y="171" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="#FBBF24" text-anchor="end">01</text>
+    <rect x="40" y="214" width="720" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(59,130,246,0.15)" stroke-width="1"/>
+    <rect x="40" y="214" width="6" height="72" rx="3" fill="#34D399"/>
+    <text x="72" y="256" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">내 돈의 흐름을 파악하세요: 가계부 작성은 필...</text>
+    <text x="730" y="255" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="#34D399" text-anchor="end">02</text>
+    <rect x="40" y="298" width="720" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(59,130,246,0.15)" stroke-width="1"/>
+    <rect x="40" y="298" width="6" height="72" rx="3" fill="#60A5FA"/>
+    <text x="72" y="340" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">통장 쪼개기로 돈 관리 마스터하기: 자동 이체...</text>
+    <text x="730" y="339" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="#60A5FA" text-anchor="end">03</text>
+    <rect x="40" y="382" width="720" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(59,130,246,0.15)" stroke-width="1"/>
+    <rect x="40" y="382" width="6" height="72" rx="3" fill="#F472B6"/>
+    <text x="72" y="424" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">나만의 예산을 세우고 지키세요: 50/30/2...</text>
+    <text x="730" y="423" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="#F472B6" text-anchor="end">04</text>
+    <rect x="40" y="466" width="720" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(59,130,246,0.15)" stroke-width="1"/>
+    <rect x="40" y="466" width="6" height="72" rx="3" fill="#A78BFA"/>
+    <text x="72" y="508" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">고정 지출을 줄이세요: 한 번 줄이면 매달 효...</text>
+    <text x="730" y="507" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="#A78BFA" text-anchor="end">05</text>
+
+  <text x="40" y="575" font-family="GmarketSansTTF,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.25)">쉬운재테크 · easyzetec.com</text>
+</svg>

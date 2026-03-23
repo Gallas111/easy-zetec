@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="580" viewBox="0 0 800 580">
+  <defs>
+    <linearGradient id="ibg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1305"/>
+      <stop offset="100%" style="stop-color:#3d2e0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="580" rx="16" fill="url(#ibg)"/>
+  <circle cx="720" cy="60" r="150" fill="rgba(245,158,11,0.04)"/>
+
+  <!-- 제목 -->
+  <rect x="40" y="30" width="8" height="36" rx="4" fill="#F59E0B"/>
+  <text x="60" y="58" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" font-weight="bold" fill="white">월세 세액공제, 매년 최대 90만원 돌려받자! 자취생·신혼부부 ...</text>
+  <text x="40" y="95" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.4)">단계별 핵심 포인트</text>
+
+  
+    <rect x="80" y="140" width="640" height="64" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(245,158,11,0.3)" stroke-width="1.5"/>
+    <circle cx="115" cy="172" r="18" fill="#F59E0B"/>
+    <text x="115" y="178" font-family="GmarketSansTTF,Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">1</text>
+    <text x="150" y="179" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">월세 세액공제, 왜 이렇게 중요할까요? (알고...</text>
+    <line x1="115" y1="204" x2="115" y2="220" stroke="rgba(245,158,11,0.4)" stroke-width="2" stroke-dasharray="4,3"/>
+    <rect x="80" y="220" width="640" height="64" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(245,158,11,0.3)" stroke-width="1.5"/>
+    <circle cx="115" cy="252" r="18" fill="#F59E0B"/>
+    <text x="115" y="258" font-family="GmarketSansTTF,Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">2</text>
+    <text x="150" y="259" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">나는 월세 세액공제 대상일까? 자격 조건 완벽...</text>
+    <line x1="115" y1="284" x2="115" y2="300" stroke="rgba(245,158,11,0.4)" stroke-width="2" stroke-dasharray="4,3"/>
+    <rect x="80" y="300" width="640" height="64" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(245,158,11,0.3)" stroke-width="1.5"/>
+    <circle cx="115" cy="332" r="18" fill="#F59E0B"/>
+    <text x="115" y="338" font-family="GmarketSansTTF,Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">3</text>
+    <text x="150" y="339" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">최대 127.5만원! 얼마나 돌려받을 수 있을...</text>
+    <line x1="115" y1="364" x2="115" y2="380" stroke="rgba(245,158,11,0.4)" stroke-width="2" stroke-dasharray="4,3"/>
+    <rect x="80" y="380" width="640" height="64" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(245,158,11,0.3)" stroke-width="1.5"/>
+    <circle cx="115" cy="412" r="18" fill="#F59E0B"/>
+    <text x="115" y="418" font-family="GmarketSansTTF,Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">4</text>
+    <text x="150" y="419" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">월세 세액공제, 어떻게 신청하나요? (필요 서...</text>
+    <line x1="115" y1="444" x2="115" y2="460" stroke="rgba(245,158,11,0.4)" stroke-width="2" stroke-dasharray="4,3"/>
+    <rect x="80" y="460" width="640" height="64" rx="12" fill="rgba(255,255,255,0.06)" stroke="rgba(245,158,11,0.3)" stroke-width="1.5"/>
+    <circle cx="115" cy="492" r="18" fill="#F59E0B"/>
+    <text x="115" y="498" font-family="GmarketSansTTF,Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">5</text>
+    <text x="150" y="499" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">월세 세액공제, 이것만은 꼭 기억하세요! (쉬...</text>
+    
+
+  <text x="40" y="565" font-family="GmarketSansTTF,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.25)">쉬운재테크 · easyzetec.com</text>
+</svg>

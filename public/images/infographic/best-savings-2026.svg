@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="470" viewBox="0 0 800 470">
+  <defs>
+    <linearGradient id="ibg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#05201a"/>
+      <stop offset="100%" style="stop-color:#0a3d2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="470" rx="16" fill="url(#ibg)"/>
+
+  <rect x="40" y="30" width="8" height="36" rx="4" fill="#10B981"/>
+  <text x="60" y="58" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" font-weight="bold" fill="white">2026년, 내 돈 불려줄 적금 어디? 최고 금리 TOP 5 완...</text>
+  <text x="40" y="95" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.4)">핵심 비교 포인트</text>
+
+  <rect x="40" y="122" width="720" height="296" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(16,185,129,0.15)" stroke-width="1"/>
+  
+    <rect x="40" y="130" width="720" height="56" fill="rgba(255,255,255,0.04)"/>
+    <circle cx="75" cy="158" r="14" fill="rgba(16,185,129,0.3)"/>
+    <text x="75" y="163" font-family="GmarketSansTTF,Arial,sans-serif" font-size="13" font-weight="bold" fill="#10B981" text-anchor="middle">✓</text>
+    <text x="105" y="164" font-family="GmarketSansTTF,Arial,sans-serif" font-size="17" fill="white">적금, 무턱대고 가입하면 후회할 수도 있어요!...</text>
+    <rect x="40" y="186" width="720" height="56" fill="rgba(255,255,255,0.08)"/>
+    <circle cx="75" cy="214" r="14" fill="rgba(16,185,129,0.3)"/>
+    <text x="75" y="219" font-family="GmarketSansTTF,Arial,sans-serif" font-size="13" font-weight="bold" fill="#10B981" text-anchor="middle">✓</text>
+    <text x="105" y="220" font-family="GmarketSansTTF,Arial,sans-serif" font-size="17" fill="white">2026년 3월 적금 금리 비교 TOP 5 (...</text>
+    <rect x="40" y="242" width="720" height="56" fill="rgba(255,255,255,0.04)"/>
+    <circle cx="75" cy="270" r="14" fill="rgba(16,185,129,0.3)"/>
+    <text x="75" y="275" font-family="GmarketSansTTF,Arial,sans-serif" font-size="13" font-weight="bold" fill="#10B981" text-anchor="middle">✓</text>
+    <text x="105" y="276" font-family="GmarketSansTTF,Arial,sans-serif" font-size="17" fill="white">적금 이자, 과연 얼마나 쌓일까? (예상 계산...</text>
+    <rect x="40" y="298" width="720" height="56" fill="rgba(255,255,255,0.08)"/>
+    <circle cx="75" cy="326" r="14" fill="rgba(16,185,129,0.3)"/>
+    <text x="75" y="331" font-family="GmarketSansTTF,Arial,sans-serif" font-size="13" font-weight="bold" fill="#10B981" text-anchor="middle">✓</text>
+    <text x="105" y="332" font-family="GmarketSansTTF,Arial,sans-serif" font-size="17" fill="white">똑똑하게 적금하고 싶다면, 이 꿀팁들을 놓치지...</text>
+    <rect x="40" y="354" width="720" height="56" fill="rgba(255,255,255,0.04)"/>
+    <circle cx="75" cy="382" r="14" fill="rgba(16,185,129,0.3)"/>
+    <text x="75" y="387" font-family="GmarketSansTTF,Arial,sans-serif" font-size="13" font-weight="bold" fill="#10B981" text-anchor="middle">✓</text>
+    <text x="105" y="388" font-family="GmarketSansTTF,Arial,sans-serif" font-size="17" fill="white">함께 읽으면 좋은 글</text>
+
+  <text x="40" y="455" font-family="GmarketSansTTF,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.25)">쉬운재테크 · easyzetec.com</text>
+</svg>

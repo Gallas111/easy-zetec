@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="590" viewBox="0 0 800 590">
+  <defs>
+    <linearGradient id="ibg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1305"/>
+      <stop offset="100%" style="stop-color:#3d2e0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="590" rx="16" fill="url(#ibg)"/>
+  <circle cx="720" cy="60" r="120" fill="rgba(245,158,11,0.03)"/>
+
+  <rect x="40" y="30" width="8" height="36" rx="4" fill="#F59E0B"/>
+  <text x="60" y="58" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" font-weight="bold" fill="white">직장인이라면 꼭! 연금저축으로 세금 환급받고 노후까지 든든하게!</text>
+  <text x="40" y="95" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.4)">이 글에서 다루는 핵심 내용</text>
+
+  
+    <rect x="40" y="130" width="720" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(245,158,11,0.15)" stroke-width="1"/>
+    <rect x="40" y="130" width="6" height="72" rx="3" fill="#FBBF24"/>
+    <text x="72" y="172" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">연금저축, 도대체 뭘까요? (개념 쉽게 이해하...</text>
+    <text x="730" y="171" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="#FBBF24" text-anchor="end">01</text>
+    <rect x="40" y="214" width="720" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(245,158,11,0.15)" stroke-width="1"/>
+    <rect x="40" y="214" width="6" height="72" rx="3" fill="#34D399"/>
+    <text x="72" y="256" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">연금저축, 왜 가입해야 할까요? (세 가지 핵...</text>
+    <text x="730" y="255" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="#34D399" text-anchor="end">02</text>
+    <rect x="40" y="298" width="720" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(245,158,11,0.15)" stroke-width="1"/>
+    <rect x="40" y="298" width="6" height="72" rx="3" fill="#60A5FA"/>
+    <text x="72" y="340" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">연금저축, 어떻게 시작하나요? (가입 및 운용...</text>
+    <text x="730" y="339" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="#60A5FA" text-anchor="end">03</text>
+    <rect x="40" y="382" width="720" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(245,158,11,0.15)" stroke-width="1"/>
+    <rect x="40" y="382" width="6" height="72" rx="3" fill="#F472B6"/>
+    <text x="72" y="424" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">연금저축, 이것만은 꼭 주의하세요! (단점 및...</text>
+    <text x="730" y="423" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="#F472B6" text-anchor="end">04</text>
+    <rect x="40" y="466" width="720" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(245,158,11,0.15)" stroke-width="1"/>
+    <rect x="40" y="466" width="6" height="72" rx="3" fill="#A78BFA"/>
+    <text x="72" y="508" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">쉬운재테크의 마지막 꿀팁! 놓치지 마세요!</text>
+    <text x="730" y="507" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="#A78BFA" text-anchor="end">05</text>
+
+  <text x="40" y="575" font-family="GmarketSansTTF,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.25)">쉬운재테크 · easyzetec.com</text>
+</svg>

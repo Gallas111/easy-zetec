@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="422" viewBox="0 0 800 422">
+  <defs>
+    <linearGradient id="ibg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a0a"/>
+      <stop offset="100%" style="stop-color:#3d1515"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="422" rx="16" fill="url(#ibg)"/>
+  <circle cx="720" cy="60" r="120" fill="rgba(239,68,68,0.03)"/>
+
+  <rect x="40" y="30" width="8" height="36" rx="4" fill="#EF4444"/>
+  <text x="60" y="58" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" font-weight="bold" fill="white">내 집 마련, 꿈이 아닌 현실로! 2024년 주택 구입 비용, ...</text>
+  <text x="40" y="95" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.4)">이 글에서 다루는 핵심 내용</text>
+
+  
+    <rect x="40" y="130" width="720" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+    <rect x="40" y="130" width="6" height="72" rx="3" fill="#FBBF24"/>
+    <text x="72" y="172" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">내 집 마련 비용, 크게 4단계로 나눠볼까요?</text>
+    <text x="730" y="171" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="#FBBF24" text-anchor="end">01</text>
+    <rect x="40" y="214" width="720" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+    <rect x="40" y="214" width="6" height="72" rx="3" fill="#34D399"/>
+    <text x="72" y="256" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">마무리하며: 내 집 마련, 막연한 꿈이 아닌 ...</text>
+    <text x="730" y="255" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="#34D399" text-anchor="end">02</text>
+    <rect x="40" y="298" width="720" height="72" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+    <rect x="40" y="298" width="6" height="72" rx="3" fill="#60A5FA"/>
+    <text x="72" y="340" font-family="GmarketSansTTF,Arial,sans-serif" font-size="18" fill="white">관련 글 추천</text>
+    <text x="730" y="339" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="#60A5FA" text-anchor="end">03</text>
+
+  <text x="40" y="407" font-family="GmarketSansTTF,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.25)">쉬운재테크 · easyzetec.com</text>
+</svg>
