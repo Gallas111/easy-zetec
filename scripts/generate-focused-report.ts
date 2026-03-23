@@ -1,5 +1,5 @@
 import { google } from 'googleapis';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+
 import * as fs from 'fs';
 import * as path from 'path';
 import * as dotenv from 'dotenv';
@@ -12,7 +12,8 @@ dotenv.config();
 const KEY_FILE_PATH = path.join(process.cwd(), 'google-credentials.json');
 const GA_PROPERTY_ID = process.env.GA_PROPERTY_ID;
 const GSC_SITE_URL = process.env.GSC_SITE_URL;
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const CF_ACCOUNT_ID = process.env.CF_ACCOUNT_ID;
+const CF_API_TOKEN = process.env.CF_API_TOKEN;
 const EMAIL_USER = process.env.EMAIL_USER;
 const EMAIL_PASS = process.env.EMAIL_PASS;
 const EMAIL_RECEIVER = process.env.EMAIL_RECEIVER;
@@ -217,15 +218,15 @@ async function fetchGA4Data(authClient: any) {
     };
 }
 
-// --- Gemini AI Analysis ---
+// --- Cloudflare Workers AI Analysis ---
 
 async function generateGeminiInsights(gscData: any, ga4Data: any): Promise<string> {
-    if (!GEMINI_API_KEY) {
-        return '## AI 분석\nGEMINI_API_KEY가 설정되지 않아 AI 분석을 건너뜁니다.';
+    if (!CF_ACCOUNT_ID || !CF_API_TOKEN) {
+        return '## AI 분석\nCF_ACCOUNT_ID 및 CF_API_TOKEN이 설정되지 않아 AI 분석을 건너뜁니다.';
     }
 
-    const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+    const CF_MODEL = '@cf/meta/llama-3.3-70b-instruct-fp8-fast';
+    const url = `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/ai/run/${CF_MODEL}`;
 
     const prompt = `
 당신은 한국 금융/재테크 블로그 "쉬운재테크" (https://www.easyzetec.com)의 SEO 및 성장 분석 전문가입니다.
@@ -291,9 +292,20 @@ ${JSON.stringify(ga4Data.sources, null, 2)}
 - 예: "이 키워드로 CTR을 높이려면 제목을 어떻게 바꿔야 할까?", "이 글의 SEO 점수를 분석해줘" 등
 `;
 
-    const result = await model.generateContent(prompt);
-    const response = result.response;
-    return response.text();
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${CF_API_TOKEN}`,
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            messages: [{ role: 'user', content: prompt }],
+            max_tokens: 8192,
+        }),
+    });
+    if (!response.ok) throw new Error(`CF Workers AI error (${response.status}): ${await response.text()}`);
+    const data = await response.json();
+    return data.result?.response || '';
 }
 
 // --- Email Sending ---
@@ -425,7 +437,7 @@ async function sendEmailReport(markdownContent: string, gscData: any) {
         ${htmlBody}
     </div>
     <div class="footer">
-        <p>이 리포트는 Google Search Console, GA4, Gemini AI를 활용하여 자동 생성되었습니다.</p>
+        <p>이 리포트는 Google Search Console, GA4, Cloudflare Workers AI를 활용하여 자동 생성되었습니다.</p>
         <p>&copy; 2026 쉬운재테크 Automation | <a href="https://www.easyzetec.com" style="color: #0D9488;">easyzetec.com</a></p>
     </div>
 </body>
@@ -493,7 +505,7 @@ async function main() {
     console.log('  - 트래픽 데이터 수집 완료');
 
     // Step 4: Generate AI insights
-    console.log('[4/4] Gemini AI 분석 중...');
+    console.log('[4/4] Cloudflare Workers AI 분석 중...');
     const insights = await generateGeminiInsights(gscData, ga4Data);
 
     // Send email report

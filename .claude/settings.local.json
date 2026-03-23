@@ -14,7 +14,15 @@
       "Read(//c/Users/owner/OneDrive/바탕 화면/사이트/ai-blog/**)",
       "Bash(gh secret:*)",
       "Bash(cd \"/c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && gh workflow run daily-content.yml 2>&1)",
-      "Bash(cd \"C:/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && npm install googleapis nodemailer marked @types/nodemailer)"
+      "Bash(cd \"C:/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec\" && npm install googleapis nodemailer marked @types/nodemailer)",
+      "Bash(curl:*)",
+      "Read(//c/Users/owner/OneDrive/바탕 화면/사이트/easy-zetec/**)",
+      "Bash(ls -la content/*/*.mdx)",
+      "Bash(sort -k6,7)",
+      "Bash(cd:*)",
+      "Bash(node:*)",
+      "Bash(gh run:*)",
+      "Bash(gh workflow:*)"
     ]
   }
 }
