@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f172a"/>
-      <stop offset="100%" style="stop-color:#1e1b4b"/>
+      <stop offset="0%" style="stop-color:#1a1305"/>
+      <stop offset="100%" style="stop-color:#3d2e0a"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
@@ -12,27 +12,27 @@
   <circle cx="80" cy="580" r="180" fill="rgba(245,158,11,0.03)"/>
 
   <!-- 카테고리 뱃지 -->
-  <rect x="80" y="65" width="68" height="38" rx="19" fill="#D97706"/>
-  <text x="114" y="90" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">절세</text>
+  <rect x="80" y="65" width="69.6" height="38" rx="19" fill="#D97706"/>
+  <text x="114.8" y="90" font-family="GmarketSansTTF,Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">절세</text>
 
   <!-- 메인 타이틀 -->
-  <text x="80" y="205" font-family="Arial,sans-serif" font-size="72" font-weight="900" fill="white">ISA 계좌</text>
+  <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="72" font-weight="900" fill="white">ISA 계좌</text>
 
   <!-- 강조 서브타이틀 -->
-  <rect x="80" y="228" width="933.1999999999999" height="54" rx="8" fill="#FBBF24"/>
-  <text x="546.5999999999999" y="267" font-family="Arial,sans-serif" font-size="32" font-weight="900" fill="#0f172a" text-anchor="middle">이것만 알면 세금 '0원'! 초보도 쉬운 비과세 투자 완벽...</text>
+  <rect x="80" y="228" width="937.0400000000004" height="54" rx="8" fill="#FBBF24"/>
+  <text x="548.5200000000002" y="267" font-family="GmarketSansTTF,Arial,sans-serif" font-size="32" font-weight="900" fill="#0f172a" text-anchor="middle">이것만 알면 세금 '0원'! 초보도 쉬운 비과세 투자 완...</text>
 
   <!-- 설명 -->
-  <text x="80" y="355" font-family="Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">ISA 계좌는 세금을 아끼면서 목돈을 불릴 수 있는 만능 절세 통장입니다. 종류부터 비과세...</text>
+  <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">ISA 계좌는 세금을 아끼면서 목돈을 불릴 수 있는 만능 절세 통장입니다. 종류부터 비과세...</text>
 
   <!-- 태그 카드 -->
   <rect x="80" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-  <text x="190" y="468" font-family="Arial,sans-serif" font-size="24" font-weight="900" fill="#FBBF24" text-anchor="middle">ISA</text>
+  <text x="190" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#FBBF24" text-anchor="middle">ISA</text>
   <rect x="320" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-  <text x="430" y="468" font-family="Arial,sans-serif" font-size="24" font-weight="900" fill="#34D399" text-anchor="middle">비과세</text>
+  <text x="430" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#34D399" text-anchor="middle">비과세</text>
   <rect x="560" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-  <text x="670" y="468" font-family="Arial,sans-serif" font-size="24" font-weight="900" fill="#60A5FA" text-anchor="middle">절세</text>
+  <text x="670" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#60A5FA" text-anchor="middle">절세</text>
 
   <!-- 하단 브랜드 -->
-  <text x="80" y="565" font-family="Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.3)">쉬운재테크 · easyzetec.com</text>
+  <text x="80" y="565" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.3)">쉬운재테크 · easyzetec.com</text>
 </svg>

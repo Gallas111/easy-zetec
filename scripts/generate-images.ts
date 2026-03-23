@@ -41,28 +41,28 @@ const ogImageSvg = `
 </svg>`;
 
 // Category styles: accent color + badge color + label
-const categoryStyles: Record<string, { accent: string; badgeBg: string; label: string }> = {
-  basics:        { accent: "#3B82F6", badgeBg: "#2563EB", label: "재테크 기초" },
-  savings:       { accent: "#10B981", badgeBg: "#059669", label: "저축/예금" },
-  investing:     { accent: "#8B5CF6", badgeBg: "#7C3AED", label: "투자" },
-  tax:           { accent: "#F59E0B", badgeBg: "#D97706", label: "절세" },
-  "real-estate": { accent: "#EF4444", badgeBg: "#DC2626", label: "부동산" },
+const categoryStyles: Record<string, { accent: string; badgeBg: string; label: string; bgFrom: string; bgTo: string }> = {
+  basics:        { accent: "#3B82F6", badgeBg: "#2563EB", label: "재테크 기초", bgFrom: "#0c1a3d", bgTo: "#1e3a5f" },
+  savings:       { accent: "#10B981", badgeBg: "#059669", label: "저축/예금",   bgFrom: "#05201a", bgTo: "#0a3d2e" },
+  investing:     { accent: "#8B5CF6", badgeBg: "#7C3AED", label: "투자",       bgFrom: "#0f172a", bgTo: "#1e1b4b" },
+  tax:           { accent: "#F59E0B", badgeBg: "#D97706", label: "절세",       bgFrom: "#1a1305", bgTo: "#3d2e0a" },
+  "real-estate": { accent: "#EF4444", badgeBg: "#DC2626", label: "부동산",     bgFrom: "#1a0a0a", bgTo: "#3d1515" },
 };
 
 function escapeXml(str: string): string {
   return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
-// 글자 폭 추정 (Arial 기준, 보수적으로)
+// 글자 폭 추정 (GmarketSans 기준, 넉넉하게)
 function estimateTextWidth(text: string, fontSize: number): number {
   let units = 0;
   for (const ch of text) {
-    if (/[\u3131-\uD79D]/.test(ch)) units += 1.0;       // 한글 (full-width)
-    else if (/[A-Z]/.test(ch)) units += 0.75;            // 영대문자
-    else if (/[a-z]/.test(ch)) units += 0.6;             // 영소문자
-    else if (/[0-9]/.test(ch)) units += 0.6;             // 숫자
+    if (/[\u3131-\uD79D]/.test(ch)) units += 1.05;      // 한글 (GmarketSans 약간 넓음)
+    else if (/[A-Z]/.test(ch)) units += 0.8;             // 영대문자
+    else if (/[a-z]/.test(ch)) units += 0.62;            // 영소문자
+    else if (/[0-9]/.test(ch)) units += 0.65;            // 숫자
     else if (ch === " ") units += 0.35;                   // 공백
-    else units += 0.7;                                    // 기타 기호
+    else units += 0.72;                                   // 기타 기호
   }
   return units * fontSize;
 }
@@ -158,14 +158,14 @@ function generatePostSvg(
     const truncTag = tag.length > 8 ? tag.substring(0, 8) + "..." : tag;
     return `
   <rect x="${x}" y="${cardY}" width="${cardWidth}" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(${rgb},0.2)" stroke-width="1"/>
-  <text x="${cx}" y="${cardY + 48}" font-family="Arial,sans-serif" font-size="24" font-weight="900" fill="${color}" text-anchor="middle">${escapeXml(truncTag)}</text>`;
+  <text x="${cx}" y="${cardY + 48}" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="${color}" text-anchor="middle">${escapeXml(truncTag)}</text>`;
   }).join("");
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f172a"/>
-      <stop offset="100%" style="stop-color:#1e1b4b"/>
+      <stop offset="0%" style="stop-color:${style.bgFrom}"/>
+      <stop offset="100%" style="stop-color:${style.bgTo}"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
@@ -176,22 +176,22 @@ function generatePostSvg(
 
   <!-- 카테고리 뱃지 -->
   <rect x="80" y="65" width="${badgeWidth}" height="38" rx="19" fill="${style.badgeBg}"/>
-  <text x="${80 + badgeWidth / 2}" y="90" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">${escapeXml(style.label)}</text>
+  <text x="${80 + badgeWidth / 2}" y="90" font-family="GmarketSansTTF,Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">${escapeXml(style.label)}</text>
 
   <!-- 메인 타이틀 -->
-  <text x="80" y="205" font-family="Arial,sans-serif" font-size="${titleSize}" font-weight="900" fill="white">${escapeXml(line1)}</text>
+  <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="${titleSize}" font-weight="900" fill="white">${escapeXml(line1)}</text>
 
   <!-- 강조 서브타이틀 -->
   <rect x="80" y="228" width="${line2Width}" height="${subSize + 22}" rx="8" fill="#FBBF24"/>
-  <text x="${80 + line2Width / 2}" y="${228 + subSize + 22 - Math.round((subSize + 22 - subSize * 0.75) / 2)}" font-family="Arial,sans-serif" font-size="${subSize}" font-weight="900" fill="#0f172a" text-anchor="middle">${escapeXml(line2)}</text>
+  <text x="${80 + line2Width / 2}" y="${228 + subSize + 22 - Math.round((subSize + 22 - subSize * 0.75) / 2)}" font-family="GmarketSansTTF,Arial,sans-serif" font-size="${subSize}" font-weight="900" fill="#0f172a" text-anchor="middle">${escapeXml(line2)}</text>
 
   <!-- 설명 -->
-  <text x="80" y="355" font-family="Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">${escapeXml(desc)}</text>
+  <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">${escapeXml(desc)}</text>
 
   <!-- 태그 카드 -->${tagCards}
 
   <!-- 하단 브랜드 -->
-  <text x="80" y="565" font-family="Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.3)">쉬운재테크 · easyzetec.com</text>
+  <text x="80" y="565" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.3)">쉬운재테크 · easyzetec.com</text>
 </svg>`;
 }
 
