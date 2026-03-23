@@ -259,6 +259,11 @@ async function main() {
       // Replace SLUG placeholder in image path
       content = content.replace('/images/SLUG.png', `/images/${slug}.png`);
 
+      // Fix HTML tags that break MDX (e.g. <br> → <br/>)
+      content = content.replace(/<br\s*>/g, '<br/>');
+      content = content.replace(/<hr\s*>/g, '<hr/>');
+      content = content.replace(/<img ([^/]*)>/g, '<img $1/>');
+
       // Ensure content directory exists
       const categoryDir = path.join(CONTENT_DIR, category);
       if (!fs.existsSync(categoryDir)) {
