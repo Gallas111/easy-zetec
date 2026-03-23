@@ -1,19 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="pg_tax" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#F59E0B"/>
-      <stop offset="100%" style="stop-color:#92400E"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e1b4b"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#pg_tax)"/>
-  <circle cx="1000" cy="150" r="250" fill="rgba(255,255,255,0.05)"/>
-  <circle cx="200" cy="500" r="180" fill="rgba(255,255,255,0.05)"/>
-  <rect x="60" y="50" width="120" height="36" rx="18" fill="rgba(255,255,255,0.2)"/>
-  <text x="120" y="74" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">🧾 절세</text>
-  <text x="80" y="260" font-family="Arial,sans-serif" font-size="54" font-weight="bold" fill="white">내 집 마련 꿈, 대출 이자도 돌려받는</text>
-  <text x="80" y="340" font-family="Arial,sans-serif" font-size="48" font-weight="bold" fill="#FCD34D">마법! 주택대출 세금혜택 완벽 가이드 (초보자 필독!)</text>
-  <text x="80" y="420" font-family="Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.7)">주택대출 이자 부담, 세금 혜택으로 확 줄여보세요! 장기주택저당차입금 이...</text>
-  <rect x="80" y="510" width="56" height="56" rx="14" fill="rgba(255,255,255,0.2)"/>
-  <text x="108" y="546" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">Z</text>
-  <text x="150" y="545" font-family="Arial,sans-serif" font-size="18" fill="rgba(255,255,255,0.7)">쉬운재테크</text>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- 배경 장식 -->
+  <circle cx="1080" cy="100" r="300" fill="rgba(245,158,11,0.05)"/>
+  <circle cx="80" cy="580" r="180" fill="rgba(245,158,11,0.03)"/>
+
+  <!-- 카테고리 뱃지 -->
+  <rect x="80" y="65" width="68" height="38" rx="19" fill="#D97706"/>
+  <text x="114" y="90" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">절세</text>
+
+  <!-- 메인 타이틀 -->
+  <text x="80" y="205" font-family="Arial,sans-serif" font-size="72" font-weight="900" fill="white">내 집 마련 꿈</text>
+
+  <!-- 강조 서브타이틀 -->
+  <rect x="80" y="228" width="950" height="54" rx="8" fill="#FBBF24"/>
+  <text x="555" y="267" font-family="Arial,sans-serif" font-size="32" font-weight="900" fill="#0f172a" text-anchor="middle">대출 이자도 돌려받는 마법! 주택대출 세금혜택 완벽 가이...</text>
+
+  <!-- 설명 -->
+  <text x="80" y="355" font-family="Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">주택대출 이자 부담, 세금 혜택으로 확 줄여보세요! 장기주택저당차입금 이자상환액 소득공제부...</text>
+
+  <!-- 태그 카드 -->
+  <rect x="80" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+  <text x="190" y="468" font-family="Arial,sans-serif" font-size="24" font-weight="900" fill="#FBBF24" text-anchor="middle">절세</text>
+  <rect x="320" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+  <text x="430" y="468" font-family="Arial,sans-serif" font-size="24" font-weight="900" fill="#34D399" text-anchor="middle">주택대출</text>
+  <rect x="560" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+  <text x="670" y="468" font-family="Arial,sans-serif" font-size="24" font-weight="900" fill="#60A5FA" text-anchor="middle">소득공제</text>
+
+  <!-- 하단 브랜드 -->
+  <text x="80" y="565" font-family="Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.3)">쉬운재테크 · easyzetec.com</text>
 </svg>

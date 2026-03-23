@@ -22,7 +22,10 @@
       "Bash(cd:*)",
       "Bash(node:*)",
       "Bash(gh run:*)",
-      "Bash(gh workflow:*)"
+      "Bash(gh workflow:*)",
+      "Bash(npx tsx:*)",
+      "Bash(cmd.exe /c \"start explorer.exe \\\\\"C:\\\\Users\\\\owner\\\\OneDrive\\\\바탕 화면\\\\사이트\\\\easy-zetec\\\\public\\\\images\\\\samples\\\\\"\")",
+      "Bash(powershell.exe -Command \"Start-Process explorer.exe 'C:\\\\Users\\\\owner\\\\OneDrive\\\\바탕 화면\\\\사이트\\\\easy-zetec\\\\public\\\\images\\\\samples'\")"
     ]
   }
 }
