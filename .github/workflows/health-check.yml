@@ -1,9 +1,8 @@
 name: Daily Health Check
 
 on:
-  schedule:
-    # KST 00:00 = UTC 15:00 - 수, 토
-    - cron: '0 15 * * 3,6'
+  # schedule:
+  #   - cron: '0 15 * * 3,6'
   workflow_dispatch:
 
 permissions:
