@@ -430,5 +430,35 @@
     "slug": "savings-challenge",
     "category": "savings",
     "createdAt": "2026-03-24"
+  },
+  {
+    "mainKeyword": "2026년 재테크 입문",
+    "slug": "zetec-beginner-2026",
+    "category": "basics",
+    "createdAt": "2026-03-24"
+  },
+  {
+    "mainKeyword": "직장인 월급 관리",
+    "slug": "salary-budget-savings",
+    "category": "savings",
+    "createdAt": "2026-03-24"
+  },
+  {
+    "mainKeyword": "ETF 투자 초보 가이드",
+    "slug": "etf-investing-beginners-2026",
+    "category": "investing",
+    "createdAt": "2026-03-24"
+  },
+  {
+    "mainKeyword": "2026 연말정산 절세",
+    "slug": "year-end-tax-tips-2026",
+    "category": "tax",
+    "createdAt": "2026-03-24"
+  },
+  {
+    "mainKeyword": "2026 청약 전략",
+    "slug": "housing-subscription-strategy-2026",
+    "category": "real-estate",
+    "createdAt": "2026-03-24"
   }
 ]
