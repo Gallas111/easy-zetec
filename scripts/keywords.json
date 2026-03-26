@@ -490,5 +490,35 @@
     "slug": "rental-contract-checklist-10",
     "category": "real-estate",
     "createdAt": "2026-03-25"
+  },
+  {
+    "mainKeyword": "가계부 앱 추천 5가지",
+    "slug": "budget-app-recommendation-5-guide",
+    "category": "basics",
+    "createdAt": "2026-03-26T00:00:00.000Z"
+  },
+  {
+    "mainKeyword": "적금 vs 예금 차이",
+    "slug": "savings-vs-deposit-difference-guide",
+    "category": "savings",
+    "createdAt": "2026-03-26T00:00:00.000Z"
+  },
+  {
+    "mainKeyword": "미국 주식 시작하기",
+    "slug": "us-stock-investing-beginner-guide-2026",
+    "category": "investing",
+    "createdAt": "2026-03-26T00:00:00.000Z"
+  },
+  {
+    "mainKeyword": "종합소득세 신고 가이드 2026",
+    "slug": "income-tax-filing-guide-freelancer-2026",
+    "category": "tax",
+    "createdAt": "2026-03-26T00:00:00.000Z"
+  },
+  {
+    "mainKeyword": "2026 청약 점수 계산법",
+    "slug": "housing-subscription-score-calculation-2026",
+    "category": "real-estate",
+    "createdAt": "2026-03-26T00:00:00.000Z"
   }
 ]
