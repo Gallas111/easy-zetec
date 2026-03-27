@@ -3,197 +3,124 @@ import path from 'path';
 import matter from 'gray-matter';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content');
-const MAX_LINKS = 3;
-const RELATED_SECTION_HEADER = '## 관련 글 추천';
 
-// ── Post index ──────────────────────────────────────────
-interface PostInfo {
-  slug: string;
-  title: string;
-  category: string;
-  keywords: string[];
-  tags: string[];
-  filePath: string;
+interface PostIndex {
+    slug: string;
+    title: string;
+    keywords: string[];
+    path: string;
 }
 
-function buildIndex(): PostInfo[] {
-  const posts: PostInfo[] = [];
-  if (!fs.existsSync(CONTENT_DIR)) return posts;
+// Global list of posts for indexing
+const postDatabase: PostIndex[] = [];
 
-  for (const cat of fs.readdirSync(CONTENT_DIR)) {
-    const catDir = path.join(CONTENT_DIR, cat);
-    if (!fs.statSync(catDir).isDirectory()) continue;
-
-    for (const file of fs.readdirSync(catDir).filter(f => f.endsWith('.mdx'))) {
-      const filePath = path.join(catDir, file);
-      const { data } = matter(fs.readFileSync(filePath, 'utf-8'));
-      posts.push({
-        slug: file.replace('.mdx', ''),
-        title: data.title || '',
-        category: data.category || cat,
-        keywords: data.keywords || [],
-        tags: data.tags || [],
-        filePath,
-      });
-    }
-  }
-
-  return posts;
-}
-
-// ── Find related posts ──────────────────────────────────
-function findRelatedPosts(post: PostInfo, allPosts: PostInfo[]): PostInfo[] {
-  const scores: { post: PostInfo; score: number }[] = [];
-
-  for (const other of allPosts) {
-    if (other.slug === post.slug) continue;
-
-    let score = 0;
-
-    // Same category bonus
-    if (other.category === post.category) score += 2;
-
-    // Keyword overlap
-    for (const kw of post.keywords) {
-      if (other.keywords.some(ok => ok.includes(kw) || kw.includes(ok))) score += 3;
-    }
-
-    // Tag overlap
-    for (const tag of post.tags) {
-      if (other.tags.includes(tag)) score += 1;
-    }
-
-    if (score > 0) {
-      scores.push({ post: other, score });
-    }
-  }
-
-  return scores
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 5)
-    .map(s => s.post);
-}
-
-// ── Count existing internal links ───────────────────────
-function countInternalLinks(content: string, allSlugs: string[]): number {
-  let count = 0;
-  for (const slug of allSlugs) {
-    if (content.includes(`/blog/${slug}`)) count++;
-  }
-  return count;
-}
-
-// ── Insert inline links ─────────────────────────────────
-function insertInlineLinks(content: string, relatedPosts: PostInfo[], allSlugs: string[]): string {
-  const existingCount = countInternalLinks(content, allSlugs);
-  if (existingCount >= MAX_LINKS) return content;
-
-  const linksToAdd = MAX_LINKS - existingCount;
-  let added = 0;
-
-  const lines = content.split('\n');
-  const result: string[] = [];
-
-  for (let i = 0; i < lines.length; i++) {
-    result.push(lines[i]);
-
-    if (added >= linksToAdd) continue;
-
-    // Look for paragraphs (non-empty lines that aren't headings, lists, tables, etc.)
-    const line = lines[i].trim();
-    const isContentLine = line.length > 30 &&
-      !line.startsWith('#') &&
-      !line.startsWith('-') &&
-      !line.startsWith('|') &&
-      !line.startsWith('>') &&
-      !line.startsWith('```') &&
-      !line.startsWith('![');
-
-    // Insert link after content paragraphs, before empty lines
-    if (isContentLine && i + 1 < lines.length && lines[i + 1].trim() === '') {
-      const candidate = relatedPosts[added];
-      if (candidate && !content.includes(`/blog/${candidate.slug}`)) {
-        // Don't insert, we'll add them in the related section instead
-        // Only insert if content naturally mentions a related topic
-        for (const kw of candidate.keywords) {
-          if (line.includes(kw) && !line.includes(`/blog/${candidate.slug}`)) {
-            // Replace first occurrence of keyword with a link
-            const linkedLine = result[result.length - 1].replace(
-              kw,
-              `[${kw}](/blog/${candidate.slug})`
-            );
-            if (linkedLine !== result[result.length - 1]) {
-              result[result.length - 1] = linkedLine;
-              added++;
-              break;
+/**
+ * Scan all MDX files and build a search index
+ */
+function buildIndex(dir: string) {
+    const files = fs.readdirSync(dir);
+    for (const file of files) {
+        const fullPath = path.join(dir, file);
+        if (fs.statSync(fullPath).isDirectory()) {
+            buildIndex(fullPath);
+        } else if (file.endsWith('.mdx')) {
+            const content = fs.readFileSync(fullPath, 'utf-8');
+            const { data } = matter(content);
+            const slug = data.slug || file.replace(/\.mdx$/, '');
+            if (slug && data.title) {
+                postDatabase.push({
+                    slug,
+                    title: data.title,
+                    keywords: data.keywords || [],
+                    path: fullPath
+                });
             }
-          }
         }
-      }
     }
-  }
-
-  return result.join('\n');
 }
 
-// ── Add related posts section ───────────────────────────
-function addRelatedSection(content: string, relatedPosts: PostInfo[]): string {
-  // Skip if already has related section
-  if (content.includes(RELATED_SECTION_HEADER)) return content;
+/**
+ * Insert links naturally into the content
+ */
+function processPost(targetPost: PostIndex) {
+    const fileContent = fs.readFileSync(targetPost.path, 'utf-8');
+    const { data, content } = matter(fileContent);
+    let newContent = content;
+    let linkCount = 0;
+    const MAX_LINKS = 3;
 
-  if (relatedPosts.length === 0) return content;
+    // Sort database by title/keyword length (descending) to match longest phrases first
+    const sortedDb = [...postDatabase]
+        .filter(p => p.slug !== targetPost.slug) // Don't link to self
+        .sort((a, b) => b.title.length - a.title.length);
 
-  const links = relatedPosts
-    .slice(0, 3)
-    .map(p => `- [${p.title}](/blog/${p.slug})`)
-    .join('\n');
+    for (const sourcePost of sortedDb) {
+        if (linkCount >= MAX_LINKS) break;
 
-  const section = `\n\n${RELATED_SECTION_HEADER}\n\n${links}\n`;
+        // Terms to search for: Title and specific keywords
+        const terms = [sourcePost.title, ...sourcePost.keywords];
 
-  return content.trimEnd() + section;
-}
+        for (const term of terms) {
+            if (term.length < 2) continue; // Skip very short terms
 
-// ── Process single post ─────────────────────────────────
-function processPost(post: PostInfo, allPosts: PostInfo[]): boolean {
-  const raw = fs.readFileSync(post.filePath, 'utf-8');
-  const { data: frontmatter, content } = matter(raw);
+            // Regex rules:
+            // 1. Match the term
+            // 2. NOT already inside a markdown link [text](/blog/slug)
+            // 3. NOT inside a header # Header
+            // 4. NOT inside a code block ```
 
-  const relatedPosts = findRelatedPosts(post, allPosts);
-  if (relatedPosts.length === 0) return false;
+            // Simple approach for natural Korean text: check if it exists in body but not in a link
+            if (newContent.includes(term)) {
+                // Check if it's already linked
+                const alreadyLinkedRegex = new RegExp(`\\[.*${term}.*\\]\\(/blog/`, 'i');
+                if (alreadyLinkedRegex.test(newContent)) continue;
 
-  const allSlugs = allPosts.map(p => p.slug);
+                // Simple check for headers: term shouldn't be preceded by # on the same line
+                // (This is a basic heuristic, can be improved)
 
-  // Insert inline links where keywords match
-  let updated = insertInlineLinks(content, relatedPosts, allSlugs);
+                const linkLabel = term;
+                const linkUrl = `/blog/${sourcePost.slug}`;
+                const markdownLink = `[${linkLabel}](${linkUrl})`;
 
-  // Add related section at the end
-  updated = addRelatedSection(updated, relatedPosts);
+                // Replace only the first occurrence
+                const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                const termRegex = new RegExp(escapedTerm, ''); // Only first match
 
-  if (updated === content) return false;
+                // Avoid replacing inside existing brackets or URLs
+                // This is a complex task for pure regex, so we do a simple check
+                const snippetIndex = newContent.indexOf(term);
+                const precedingText = newContent.slice(Math.max(0, snippetIndex - 20), snippetIndex);
+                const followingText = newContent.slice(snippetIndex + term.length, snippetIndex + term.length + 20);
 
-  // Write back
-  const final = matter.stringify(updated, frontmatter);
-  fs.writeFileSync(post.filePath, final, 'utf-8');
-  return true;
-}
+                if (precedingText.includes('[') || followingText.includes('](') || precedingText.includes('#')) {
+                    continue;
+                }
 
-// ── Main ────────────────────────────────────────────────
-function main() {
-  console.log('\n🔗 내부 링크 최적화 시작\n');
-
-  const allPosts = buildIndex();
-  console.log(`📋 총 ${allPosts.length}개 포스트 인덱싱 완료\n`);
-
-  let updated = 0;
-  for (const post of allPosts) {
-    const changed = processPost(post, allPosts);
-    if (changed) {
-      updated++;
-      console.log(`   ✅ 링크 추가: ${post.slug}`);
+                newContent = newContent.replace(termRegex, markdownLink);
+                console.log(`🔗 Linked "${term}" to /blog/${sourcePost.slug} in ${targetPost.slug}`);
+                linkCount++;
+                break; // Move to next source post once one term is linked
+            }
+        }
     }
-  }
 
-  console.log(`\n✅ ${updated}/${allPosts.length}개 포스트 업데이트 완료!\n`);
+    if (linkCount > 0) {
+        const updatedFile = matter.stringify(newContent, data);
+        fs.writeFileSync(targetPost.path, updatedFile);
+    }
 }
 
-main();
+async function main() {
+    console.log("🔗 Internal Linker Bot starting...");
+
+    buildIndex(CONTENT_DIR);
+    console.log(`📚 Indexed ${postDatabase.length} posts.`);
+
+    for (const post of postDatabase) {
+        processPost(post);
+    }
+
+    console.log("🏁 Internal Linker Bot finished.");
+}
+
+main().catch(console.error);
