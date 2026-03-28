@@ -70,6 +70,14 @@ export default function Footer() {
                   이용약관
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-gray-300 hover:text-[var(--color-primary-light)] text-sm transition-colors"
+                >
+                  문의
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

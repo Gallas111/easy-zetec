@@ -16,22 +16,22 @@
   <text x="142.8" y="90" font-family="GmarketSansTTF,Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">재테크 기초</text>
 
   <!-- 메인 타이틀 -->
-  <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="72" font-weight="900" fill="white">가계부 쓰는 법 5단계 –</text>
+  <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="52" font-weight="900" fill="white">사회초년생 월급 관리법 — 50-30-20</text>
 
   <!-- 강조 서브타이틀 -->
-  <rect x="80" y="228" width="638.0000000000001" height="64" rx="8" fill="#FBBF24"/>
-  <text x="399.00000000000006" y="276" font-family="GmarketSansTTF,Arial,sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">매달 돈이 모이는 습관 만들기</text>
+  <rect x="80" y="228" width="579.2" height="64" rx="8" fill="#FBBF24"/>
+  <text x="369.6" y="276" font-family="GmarketSansTTF,Arial,sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">법칙으로 돈 모으는 첫걸음</text>
 
   <!-- 설명 -->
-  <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">돈 새는 구멍, 찾으셨나요? 재테크 초보도 쉽게 따라 하는 가계부 작성 5단계로 월급 관리...</text>
+  <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">첫 월급을 받았는데 어디에 써야 할지 모르겠다면 50-30-20 법칙을 따라해보세요. 사회...</text>
 
   <!-- 태그 카드 -->
   <rect x="80" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(59,130,246,0.2)" stroke-width="1"/>
-  <text x="190" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#FBBF24" text-anchor="middle">가계부</text>
+  <text x="190" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#FBBF24" text-anchor="middle">월급관리</text>
   <rect x="320" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(59,130,246,0.2)" stroke-width="1"/>
-  <text x="430" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#34D399" text-anchor="middle">재테크</text>
+  <text x="430" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#34D399" text-anchor="middle">재테크기초</text>
   <rect x="560" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(59,130,246,0.2)" stroke-width="1"/>
-  <text x="670" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#60A5FA" text-anchor="middle">돈 관리</text>
+  <text x="670" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#60A5FA" text-anchor="middle">예산관리</text>
 
   <!-- 하단 브랜드 -->
   <text x="80" y="565" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.3)">쉬운재테크 · easyzetec.com</text>

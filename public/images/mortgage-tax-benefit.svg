@@ -16,11 +16,11 @@
   <text x="114.8" y="90" font-family="GmarketSansTTF,Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">절세</text>
 
   <!-- 메인 타이틀 -->
-  <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="72" font-weight="900" fill="white">내 집 마련 꿈</text>
+  <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="62" font-weight="900" fill="white">주택대출 이자 소득공제 받는 법</text>
 
   <!-- 강조 서브타이틀 -->
-  <rect x="80" y="228" width="950" height="54" rx="8" fill="#FBBF24"/>
-  <text x="555" y="267" font-family="GmarketSansTTF,Arial,sans-serif" font-size="32" font-weight="900" fill="#0f172a" text-anchor="middle">대출 이자도 돌려받는 마법! 주택대출 세금혜택 완벽 가...</text>
+  <rect x="80" y="228" width="521.24" height="64" rx="8" fill="#FBBF24"/>
+  <text x="340.62" y="276" font-family="GmarketSansTTF,Arial,sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">– 연말정산 환급 가이드</text>
 
   <!-- 설명 -->
   <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">주택대출 이자 부담, 세금 혜택으로 확 줄여보세요! 장기주택저당차입금 이자상환액 소득공제부...</text>

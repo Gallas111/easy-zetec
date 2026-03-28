@@ -20,6 +20,8 @@ import ComparisonTable from "@/components/ComparisonTable";
 import KeyTakeaway from "@/components/KeyTakeaway";
 import PostCard from "@/components/PostCard";
 import ShareButtons from "@/components/ShareButtons";
+import AuthorCard from "@/components/AuthorCard";
+import Disclaimer from "@/components/Disclaimer";
 import Link from "next/link";
 
 export const dynamicParams = false;
@@ -96,12 +98,15 @@ export default async function BlogPostPage({
     description: post.meta.description,
     datePublished: post.meta.date,
     author: {
-      "@type": "Person",
-      name: post.meta.author,
+      "@type": "Organization",
+      name: "쉬운재테크 편집팀",
+      url: "https://www.easyzetec.com/about",
+      description: "경제·금융 전공 편집진",
     },
     publisher: {
       "@type": "Organization",
       name: "쉬운재테크",
+      url: "https://www.easyzetec.com",
     },
     image: post.meta.image,
   };
@@ -213,8 +218,14 @@ export default async function BlogPostPage({
               </div>
             </header>
 
+            {/* Author Card - E-E-A-T */}
+            <AuthorCard date={post.meta.date} readingTime={`${post.meta.readingTime}분`} />
+
             {/* MDX Content */}
             <div className="prose">{content}</div>
+
+            {/* Disclaimer & Ad Disclosure */}
+            <Disclaimer />
 
             {/* FAQ Section */}
             {post.meta.faq && post.meta.faq.length > 0 && (

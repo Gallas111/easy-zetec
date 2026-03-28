@@ -16,11 +16,11 @@
   <text x="114.8" y="90" font-family="GmarketSansTTF,Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">절세</text>
 
   <!-- 메인 타이틀 -->
-  <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="72" font-weight="900" fill="white">초보도 수백만원 아낀다!</text>
+  <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="62" font-weight="900" fill="white">생애최초 취득세 감면 받는 법 –</text>
 
   <!-- 강조 서브타이틀 -->
-  <rect x="80" y="228" width="950" height="54" rx="8" fill="#FBBF24"/>
-  <text x="555" y="267" font-family="GmarketSansTTF,Arial,sans-serif" font-size="32" font-weight="900" fill="#0f172a" text-anchor="middle">내 집 마련 취득세 '0원' 만드는 생애최초 감면 완벽 가...</text>
+  <rect x="80" y="228" width="608.6000000000001" height="64" rx="8" fill="#FBBF24"/>
+  <text x="384.30000000000007" y="276" font-family="GmarketSansTTF,Arial,sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">내 집 마련 시 수백만원 절약</text>
 
   <!-- 설명 -->
   <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">내 집 마련의 꿈, 취득세 때문에 망설이셨나요? 재테크 초보자도 쉽게 따라 할 수 있도록,...</text>

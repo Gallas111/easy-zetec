@@ -16,22 +16,22 @@
   <text x="123.2" y="90" font-family="GmarketSansTTF,Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">부동산</text>
 
   <!-- 메인 타이틀 -->
-  <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="64" font-weight="900" fill="white">주택담보대출 종류 비교 – 정부</text>
+  <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="72" font-weight="900" fill="white">2026 청약 점수 계산법 –</text>
 
   <!-- 강조 서브타이틀 -->
-  <rect x="80" y="228" width="601.88" height="64" rx="8" fill="#FBBF24"/>
-  <text x="380.94" y="276" font-family="GmarketSansTTF,Arial,sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">vs 은행 대출 뭐가 유리할까</text>
+  <rect x="80" y="228" width="491" height="64" rx="8" fill="#FBBF24"/>
+  <text x="325.5" y="276" font-family="GmarketSansTTF,Arial,sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">당첨 확률 높이는 전략</text>
 
   <!-- 설명 -->
-  <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">내 집 마련의 꿈, 주택담보대출이 막막하다면 주목! 디딤돌, 보금자리론부터 시중은행 상품까...</text>
+  <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">2026년 청약 점수 계산법을 정리했어요. 가점제 항목별 점수 기준부터 당첨 확률을 높이는...</text>
 
   <!-- 태그 카드 -->
   <rect x="80" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
-  <text x="190" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#FBBF24" text-anchor="middle">주택담보대출</text>
+  <text x="190" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#FBBF24" text-anchor="middle">청약</text>
   <rect x="320" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
-  <text x="430" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#34D399" text-anchor="middle">내집마련</text>
+  <text x="430" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#34D399" text-anchor="middle">부동산</text>
   <rect x="560" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
-  <text x="670" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#60A5FA" text-anchor="middle">부동산재테크</text>
+  <text x="670" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#60A5FA" text-anchor="middle">내집마련</text>
 
   <!-- 하단 브랜드 -->
   <text x="80" y="565" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.3)">쉬운재테크 · easyzetec.com</text>

@@ -16,11 +16,11 @@
   <text x="137.36" y="90" font-family="GmarketSansTTF,Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">저축/예금</text>
 
   <!-- 메인 타이틀 -->
-  <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="72" font-weight="900" fill="white">월급 스치는 통장?</text>
+  <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="72" font-weight="900" fill="white">선저축 후지출 하는 법 –</text>
 
   <!-- 강조 서브타이틀 -->
-  <rect x="80" y="228" width="938.6400000000002" height="54" rx="8" fill="#FBBF24"/>
-  <text x="549.3200000000002" y="267" font-family="GmarketSansTTF,Arial,sans-serif" font-size="32" font-weight="900" fill="#0f172a" text-anchor="middle">'선저축 후지출' 하나로 돈 모으는 마법 (재테크 초보...</text>
+  <rect x="80" y="228" width="491" height="64" rx="8" fill="#FBBF24"/>
+  <text x="325.5" y="276" font-family="GmarketSansTTF,Arial,sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">월급 관리의 기본 공식</text>
 
   <!-- 설명 -->
   <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">월급날만 되면 통장이 텅 비나요? '선저축 후지출' 개념과 쉬운 실천법으로 재테크 초보도 ...</text>
