@@ -580,5 +580,65 @@
     "slug": "monthly-rent-vs-jeonse-comparison-2026",
     "category": "real-estate",
     "createdAt": "2026-03-28T00:00:00.000Z"
+  },
+  {
+    "mainKeyword": "통장 쪼개기 실전 가이드 2026",
+    "slug": "bank-account-splitting-guide-2026",
+    "category": "basics",
+    "createdAt": "2026-03-29"
+  },
+  {
+    "mainKeyword": "적금 금리 비교 2026",
+    "slug": "savings-rate-comparison-2026",
+    "category": "savings",
+    "createdAt": "2026-03-29"
+  },
+  {
+    "mainKeyword": "ETF 초보 투자 시작",
+    "slug": "etf-beginner-investment-start-guide",
+    "category": "investing",
+    "createdAt": "2026-03-29"
+  },
+  {
+    "mainKeyword": "종합소득세 신고 방법 2026",
+    "slug": "income-tax-filing-easy-guide-2026",
+    "category": "tax",
+    "createdAt": "2026-03-29"
+  },
+  {
+    "mainKeyword": "전세 사기 예방 체크리스트",
+    "slug": "jeonse-fraud-prevention-checklist-7",
+    "category": "real-estate",
+    "createdAt": "2026-03-29"
+  },
+  {
+    "mainKeyword": "신용점수 올리는 방법 2026",
+    "slug": "credit-score-improve-5-ways-2026",
+    "category": "basics",
+    "createdAt": "2026-03-30"
+  },
+  {
+    "mainKeyword": "청년 저축 계좌 비교 2026",
+    "slug": "youth-savings-account-comparison-2026",
+    "category": "savings",
+    "createdAt": "2026-03-30"
+  },
+  {
+    "mainKeyword": "미국 주식 초보 가이드 2026",
+    "slug": "us-stock-beginner-guide-2026",
+    "category": "investing",
+    "createdAt": "2026-03-30"
+  },
+  {
+    "mainKeyword": "부가가치세 신고 기간 방법",
+    "slug": "vat-filing-period-method-guide",
+    "category": "tax",
+    "createdAt": "2026-03-30"
+  },
+  {
+    "mainKeyword": "월세 세액공제 조건 방법",
+    "slug": "monthly-rent-tax-credit-conditions",
+    "category": "real-estate",
+    "createdAt": "2026-03-30"
   }
 ]
