@@ -105,6 +105,8 @@ export default function RootLayout({
         <link rel="alternate" type="application/rss+xml" title="쉬운재테크 RSS" href="/rss.xml" />
         <meta name="google-site-verification" content="CTE7IlDhB9EWswa-1uO4R_P0mgl96dLTIKrYQWczf-A" />
         <meta name="naver-site-verification" content="d29fbbad151bce7158310a25af19168e476a7707" />
+        {/* TODO: Add Bing Webmaster verification code */}
+        {/* <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE" /> */}
         <meta name="google-adsense-account" content="ca-pub-1022869499967960" />
         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1022869499967960" crossOrigin="anonymous" strategy="afterInteractive" />
         <meta name="theme-color" content="#0D9488" />
