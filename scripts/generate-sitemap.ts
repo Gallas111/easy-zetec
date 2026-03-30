@@ -35,8 +35,8 @@ function generateSitemap() {
   // Static pages
   entries.push(
     { url: "/", changefreq: "daily", priority: 1.0 },
-    { url: "/blog", changefreq: "daily", priority: 0.9 },
-    { url: "/about", changefreq: "monthly", priority: 0.5 },
+    { url: "/blog", changefreq: "daily", priority: 0.8 },
+    { url: "/about", changefreq: "yearly", priority: 0.3 },
     { url: "/privacy", changefreq: "yearly", priority: 0.3 },
     { url: "/terms", changefreq: "yearly", priority: 0.3 }
   );
@@ -47,7 +47,7 @@ function generateSitemap() {
     entries.push({
       url: `/blog/category/${cat}`,
       changefreq: "weekly",
-      priority: 0.8,
+      priority: 0.7,
     });
   }
 
@@ -65,8 +65,8 @@ function generateSitemap() {
       lastmod: data.date
         ? new Date(data.date).toISOString().split("T")[0]
         : undefined,
-      changefreq: "weekly",
-      priority: 0.7,
+      changefreq: "monthly",
+      priority: 0.6,
     });
   }
 
