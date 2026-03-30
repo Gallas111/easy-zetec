@@ -111,6 +111,46 @@ export default async function BlogPostPage({
     image: post.meta.image,
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "홈",
+        item: "https://www.easyzetec.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "블로그",
+        item: "https://www.easyzetec.com/blog",
+      },
+      ...(category
+        ? [
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: category.name,
+              item: `https://www.easyzetec.com/blog/category/${category.slug}`,
+            },
+            {
+              "@type": "ListItem",
+              position: 4,
+              name: post.meta.title,
+            },
+          ]
+        : [
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: post.meta.title,
+            },
+          ]),
+    ],
+  };
+
   const faqJsonLd = post.meta.faq?.length
     ? {
         "@context": "https://schema.org",
@@ -138,6 +178,10 @@ export default async function BlogPostPage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
 
       <article className="max-w-6xl mx-auto px-4 py-8">
         <Breadcrumb category={category || undefined} title={post.meta.title} />
