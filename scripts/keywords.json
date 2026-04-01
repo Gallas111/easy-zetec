@@ -670,5 +670,35 @@
     "slug": "jeonse-contract-checklist-guide",
     "category": "real-estate",
     "createdAt": "2026-03-31"
+  },
+  {
+    "mainKeyword": "ISA 계좌",
+    "slug": "isa-account-pros-cons-guide-2026",
+    "category": "basics",
+    "createdAt": "2026-04-01T00:01:00.000Z"
+  },
+  {
+    "mainKeyword": "청년 도약 계좌 2026",
+    "slug": "youth-leap-account-2026-application-guide",
+    "category": "savings",
+    "createdAt": "2026-04-01T00:02:00.000Z"
+  },
+  {
+    "mainKeyword": "금 투자 방법 비교",
+    "slug": "gold-investment-method-comparison-2026",
+    "category": "investing",
+    "createdAt": "2026-04-01T00:03:00.000Z"
+  },
+  {
+    "mainKeyword": "근로장려금 신청 조건",
+    "slug": "earned-income-tax-credit-2026-guide",
+    "category": "tax",
+    "createdAt": "2026-04-01T00:04:00.000Z"
+  },
+  {
+    "mainKeyword": "주담대 금리 비교",
+    "slug": "mortgage-rate-comparison-2026-guide",
+    "category": "real-estate",
+    "createdAt": "2026-04-01T00:05:00.000Z"
   }
 ]
