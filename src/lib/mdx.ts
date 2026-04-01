@@ -23,6 +23,7 @@ export interface PostMeta {
 export interface Post {
   meta: PostMeta;
   content: string;
+  fileModified: string;
 }
 
 function calculateReadingTime(content: string): number {
@@ -86,6 +87,7 @@ export function getPostBySlug(slug: string): Post | null {
     if (fs.existsSync(filePath)) {
       const fileContents = fs.readFileSync(filePath, "utf-8");
       const { data, content } = matter(fileContents);
+      const fileStat = fs.statSync(filePath);
 
       return {
         meta: {
@@ -104,6 +106,7 @@ export function getPostBySlug(slug: string): Post | null {
           readingTime: calculateReadingTime(content),
         },
         content,
+        fileModified: fileStat.mtime.toISOString(),
       };
     }
   }

@@ -97,6 +97,7 @@ export default async function BlogPostPage({
     headline: post.meta.title,
     description: post.meta.description,
     datePublished: post.meta.date,
+    dateModified: post.fileModified,
     author: {
       "@type": "Organization",
       name: "쉬운재테크 편집팀",
