@@ -700,5 +700,35 @@
     "slug": "mortgage-rate-comparison-2026-guide",
     "category": "real-estate",
     "createdAt": "2026-04-01T00:05:00.000Z"
+  },
+  {
+    "mainKeyword": "체크카드 혜택 비교 2026",
+    "slug": "check-card-benefits-comparison-2026",
+    "category": "basics",
+    "createdAt": "2026-04-02T00:00:00.000Z"
+  },
+  {
+    "mainKeyword": "적금 금리 비교 2026",
+    "slug": "savings-rate-comparison-2026-guide",
+    "category": "savings",
+    "createdAt": "2026-04-02T00:01:00.000Z"
+  },
+  {
+    "mainKeyword": "배당주 추천 2026",
+    "slug": "dividend-stock-recommendation-2026",
+    "category": "investing",
+    "createdAt": "2026-04-02T00:02:00.000Z"
+  },
+  {
+    "mainKeyword": "월세 세액공제 신청 방법",
+    "slug": "rent-tax-deduction-application-guide",
+    "category": "tax",
+    "createdAt": "2026-04-02T00:03:00.000Z"
+  },
+  {
+    "mainKeyword": "전세 사기 예방 체크리스트",
+    "slug": "jeonse-scam-prevention-checklist",
+    "category": "real-estate",
+    "createdAt": "2026-04-02T00:04:00.000Z"
   }
 ]
