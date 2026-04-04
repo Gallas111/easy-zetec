@@ -730,5 +730,35 @@
     "slug": "jeonse-scam-prevention-checklist",
     "category": "real-estate",
     "createdAt": "2026-04-02T00:04:00.000Z"
+  },
+  {
+    "mainKeyword": "주식 초보자 가이드",
+    "slug": "stock-beginner-guide-start-2026",
+    "category": "basics",
+    "createdAt": "2026-04-04T00:00:00.000Z"
+  },
+  {
+    "mainKeyword": "청년 지원금 2026 총정리",
+    "slug": "youth-subsidy-2026-application-guide",
+    "category": "savings",
+    "createdAt": "2026-04-04T00:01:00.000Z"
+  },
+  {
+    "mainKeyword": "ETF 추천 2026 TOP7",
+    "slug": "etf-recommendation-beginner-2026",
+    "category": "investing",
+    "createdAt": "2026-04-04T00:02:00.000Z"
+  },
+  {
+    "mainKeyword": "종합소득세 신고 방법 2026",
+    "slug": "income-tax-filing-guide-2026",
+    "category": "tax",
+    "createdAt": "2026-04-04T00:03:00.000Z"
+  },
+  {
+    "mainKeyword": "청약 점수 계산법",
+    "slug": "housing-subscription-score-guide",
+    "category": "real-estate",
+    "createdAt": "2026-04-04T00:04:00.000Z"
   }
 ]
