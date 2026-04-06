@@ -790,5 +790,35 @@
     "slug": "mortgage-rate-comparison-2026",
     "category": "real-estate",
     "createdAt": "2026-04-06T00:04:00.000Z"
+  },
+  {
+    "mainKeyword": "체크카드 혜택 비교 2026",
+    "slug": "checklist-card-benefits-comparison-2026",
+    "category": "basics",
+    "createdAt": "2026-04-05T00:00:00.000Z"
+  },
+  {
+    "mainKeyword": "청년 지원금 2026 신청",
+    "slug": "youth-support-money-2026-application",
+    "category": "savings",
+    "createdAt": "2026-04-05T00:01:00.000Z"
+  },
+  {
+    "mainKeyword": "ETF 추천 초보자 2026",
+    "slug": "etf-recommendation-beginners-2026",
+    "category": "investing",
+    "createdAt": "2026-04-05T00:02:00.000Z"
+  },
+  {
+    "mainKeyword": "근로장려금 신청 조건",
+    "slug": "earned-income-tax-credit-application",
+    "category": "tax",
+    "createdAt": "2026-04-05T00:03:00.000Z"
+  },
+  {
+    "mainKeyword": "청약 점수 계산 안정권",
+    "slug": "housing-subscription-score-guide",
+    "category": "real-estate",
+    "createdAt": "2026-04-05T00:04:00.000Z"
   }
 ]
