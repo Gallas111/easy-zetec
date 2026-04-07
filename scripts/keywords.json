@@ -820,5 +820,35 @@
     "slug": "housing-subscription-score-guide",
     "category": "real-estate",
     "createdAt": "2026-04-05T00:04:00.000Z"
+  },
+  {
+    "mainKeyword": "ISA 계좌 개설 완벽 가이드",
+    "slug": "isa-account-complete-guide-2026",
+    "category": "basics",
+    "createdAt": "2026-04-07T00:00:00.000Z"
+  },
+  {
+    "mainKeyword": "청년 도약 계좌 2026 신청 가이드",
+    "slug": "youth-leap-account-2026-guide",
+    "category": "savings",
+    "createdAt": "2026-04-07T00:01:00.000Z"
+  },
+  {
+    "mainKeyword": "금 투자 방법 5가지 비교",
+    "slug": "gold-investment-methods-comparison-guide",
+    "category": "investing",
+    "createdAt": "2026-04-07T00:02:00.000Z"
+  },
+  {
+    "mainKeyword": "종합소득세 신고 기간 2026",
+    "slug": "income-tax-filing-period-2026-guide",
+    "category": "tax",
+    "createdAt": "2026-04-07T00:03:00.000Z"
+  },
+  {
+    "mainKeyword": "2026년 부동산 전망 투자 전략",
+    "slug": "real-estate-market-outlook-2026",
+    "category": "real-estate",
+    "createdAt": "2026-04-07T00:04:00.000Z"
   }
 ]
