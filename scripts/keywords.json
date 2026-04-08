@@ -850,5 +850,35 @@
     "slug": "real-estate-market-outlook-2026",
     "category": "real-estate",
     "createdAt": "2026-04-07T00:04:00.000Z"
+  },
+  {
+    "mainKeyword": "미국 주식 시작하는 법",
+    "slug": "us-stock-beginner-start-guide",
+    "category": "basics",
+    "createdAt": "2026-04-08T00:00:00.000Z"
+  },
+  {
+    "mainKeyword": "미국 배당 ETF 추천",
+    "slug": "us-dividend-etf-recommendation-2026",
+    "category": "investing",
+    "createdAt": "2026-04-08T00:01:00.000Z"
+  },
+  {
+    "mainKeyword": "종합소득세 마감 준비",
+    "slug": "income-tax-deadline-preparation-guide",
+    "category": "tax",
+    "createdAt": "2026-04-08T00:02:00.000Z"
+  },
+  {
+    "mainKeyword": "청약 점수 안정권 2026",
+    "slug": "housing-subscription-safe-score-guide",
+    "category": "real-estate",
+    "createdAt": "2026-04-08T00:03:00.000Z"
+  },
+  {
+    "mainKeyword": "IRP 해지 방법 불이익",
+    "slug": "irp-withdrawal-penalty-method-guide",
+    "category": "basics",
+    "createdAt": "2026-04-08T00:04:00.000Z"
   }
 ]
