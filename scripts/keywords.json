@@ -910,5 +910,35 @@
     "slug": "jeonse-fraud-prevention-checklist-guide",
     "category": "real-estate",
     "createdAt": "2026-04-09T00:04:00.000Z"
+  },
+  {
+    "mainKeyword": "퇴직금 계산법과 수령 시 세금",
+    "slug": "severance-pay-calculation-tax-guide",
+    "category": "basics",
+    "createdAt": "2026-04-10T10:00:00.000Z"
+  },
+  {
+    "mainKeyword": "예금 vs 적금 차이와 선택 전략",
+    "slug": "deposit-vs-savings-when-to-choose-guide",
+    "category": "savings",
+    "createdAt": "2026-04-10T10:00:00.000Z"
+  },
+  {
+    "mainKeyword": "ETF 적립식 투자 초보 가이드",
+    "slug": "etf-monthly-investment-beginner-guide",
+    "category": "investing",
+    "createdAt": "2026-04-10T10:00:00.000Z"
+  },
+  {
+    "mainKeyword": "중소기업 청년 소득세 감면 신청법",
+    "slug": "sme-youth-income-tax-reduction-guide",
+    "category": "tax",
+    "createdAt": "2026-04-10T10:00:00.000Z"
+  },
+  {
+    "mainKeyword": "대환대출 주담대 금리 낮추기",
+    "slug": "refinance-mortgage-rate-reduction-guide",
+    "category": "real-estate",
+    "createdAt": "2026-04-10T10:00:00.000Z"
   }
 ]
