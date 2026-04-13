@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e1b4b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- 배경 장식 -->
+  <circle cx="1080" cy="100" r="300" fill="rgba(139,92,246,0.05)"/>
+  <circle cx="80" cy="580" r="180" fill="rgba(139,92,246,0.03)"/>
+
+  <!-- 카테고리 뱃지 -->
+  <rect x="80" y="65" width="69.6" height="38" rx="19" fill="#7C3AED"/>
+  <text x="114.8" y="90" font-family="GmarketSansTTF,Arial,sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">투자</text>
+
+  <!-- 메인 타이틀 -->
+  <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="70" font-weight="900" fill="white">ETF 초보 투자 시작하는 법</text>
+
+  <!-- 강조 서브타이틀 -->
+  <rect x="80" y="228" width="477.14" height="64" rx="8" fill="#FBBF24"/>
+  <text x="318.57" y="276" font-family="GmarketSansTTF,Arial,sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">— 주식보다 쉬운 이유</text>
+
+  <!-- 설명 -->
+  <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">주식 투자가 어렵게 느껴진다면 ETF부터 시작해보세요. ETF가 뭔지, 왜 초보에게 좋은지...</text>
+
+  <!-- 태그 카드 -->
+  <rect x="80" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+  <text x="190" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#FBBF24" text-anchor="middle">ETF</text>
+  <rect x="320" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+  <text x="430" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#34D399" text-anchor="middle">투자입문</text>
+  <rect x="560" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+  <text x="670" y="468" font-family="GmarketSansTTF,Arial,sans-serif" font-size="24" font-weight="900" fill="#60A5FA" text-anchor="middle">주식투자</text>
+
+  <!-- 하단 브랜드 -->
+  <text x="80" y="565" font-family="GmarketSansTTF,Arial,sans-serif" font-size="14" fill="rgba(255,255,255,0.3)">쉬운재테크 · easyzetec.com</text>
+</svg>
