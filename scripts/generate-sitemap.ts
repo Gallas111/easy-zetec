@@ -62,8 +62,8 @@ function generateSitemap() {
     const slug = path.basename(filePath, ".mdx");
     entries.push({
       url: `/blog/${slug}`,
-      lastmod: data.date
-        ? new Date(data.date).toISOString().split("T")[0]
+      lastmod: (data.dateModified || data.updated || data.date)
+        ? new Date(data.dateModified || data.updated || data.date).toISOString().split("T")[0]
         : undefined,
       changefreq: "monthly",
       priority: 0.6,
