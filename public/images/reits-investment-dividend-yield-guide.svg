@@ -23,7 +23,7 @@
   <text x="303.45000000000005" y="276" font-family="GmarketSansTTF,Arial,sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">부동산 배당 받는 법</text>
 
   <!-- 설명 -->
-  <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">리츠(REITs) 투자로 소액으로 부동산 배당을 받는 방법을 정리했어요. 국내외 리츠 종류...</text>
+  <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">리츠(REITs) 투자로 소액으로 부동산 배당을 받는 법을 정리했어요. 국내외 리츠 종류,...</text>
 
   <!-- 태그 카드 -->
   <rect x="80" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
