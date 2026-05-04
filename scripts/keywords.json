@@ -1108,5 +1108,11 @@
     "slug": "monthly-500k-5year-savings-simulation",
     "category": "savings",
     "createdAt": "2026-05-04"
+  },
+  {
+    "mainKeyword": "종합부동산세 6월 1일 기준일",
+    "slug": "comprehensive-property-tax-june-1-cutoff-may-buy-sell-simulation",
+    "category": "real-estate",
+    "createdAt": "2026-05-03"
   }
 ]
