@@ -20,9 +20,14 @@ export async function generateMetadata({
   const category = getCategoryBySlug(slug);
   if (!category) return {};
 
+  const posts = getPostsByCategory(category.folderName).filter((p) => !p.noindex);
+
   return {
     title: category.seoTitle,
     description: category.seoDescription,
+    robots: posts.length < 5
+      ? { index: false, follow: true }
+      : { index: true, follow: true, "max-image-preview": "large" },
     alternates: {
       canonical: `/blog/category/${slug}`,
     },
