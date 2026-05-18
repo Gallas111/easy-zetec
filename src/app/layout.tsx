@@ -103,6 +103,18 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="alternate" type="application/rss+xml" title="쉬운재테크 RSS" href="/rss.xml" />
+        {/* Pretendard 폰트 비동기 (render-blocking 회피) */}
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+        <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+        <link rel="stylesheet" media="print" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+        <noscript>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+        </noscript>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var links=document.querySelectorAll('link[rel="stylesheet"][media="print"]');links.forEach(function(l){if(l.sheet){l.media='all';}else{l.addEventListener('load',function(){l.media='all';});}});})();`,
+          }}
+        />
         <meta name="google-site-verification" content="CTE7IlDhB9EWswa-1uO4R_P0mgl96dLTIKrYQWczf-A" />
         <meta name="naver-site-verification" content="d29fbbad151bce7158310a25af19168e476a7707" />
         {/* TODO: Add Bing Webmaster verification code */}
