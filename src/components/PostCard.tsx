@@ -27,6 +27,10 @@ export default function PostCard({ post, featured = false }: PostCardProps) {
             <img
               src={post.image}
               alt={post.title}
+              width={800}
+              height={450}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
           ) : (
