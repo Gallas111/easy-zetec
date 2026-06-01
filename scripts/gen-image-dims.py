@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
 """
+DEPRECATED: superseded by scripts/gen-image-dims.mjs, which runs automatically
+as the first step of `npm run build` (so new posts' body-image dims are picked
+up on every build, locally and on Cloudflare Pages CI). This .py is kept only as
+a manual fallback; the Node version emits a byte-identical JSON. Prefer the .mjs.
+
 Generate a static image-dimensions map for body images referenced in content/.
 Walks every category subdirectory under content/ for .mdx files, extracts
 markdown image refs ![alt](/images/...), looks them up under public/, and

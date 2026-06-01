@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npx tsx scripts/generate-images.ts && npx tsx scripts/generate-sitemap.ts && npx tsx scripts/generate-rss.ts && npx next build",
+    "build": "node scripts/gen-image-dims.mjs && npx tsx scripts/generate-images.ts && npx tsx scripts/generate-sitemap.ts && npx tsx scripts/generate-rss.ts && npx next build",
     "start": "next start",
     "lint": "eslint",
     "blog:generate": "npx tsx scripts/generate-seo-post.ts",
@@ -40,6 +40,7 @@
     "cross-env": "^10.1.0",
     "eslint": "^9",
     "eslint-config-next": "^15.5.12",
+    "image-size": "^2.0.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
