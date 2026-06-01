@@ -23,7 +23,7 @@
   <text x="383.25000000000006" y="276" font-family="GmarketSansTTF,Arial,sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">놓치면 손해인 지원금 5가지</text>
 
   <!-- 설명 -->
-  <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">2026년 청년 지원금 5가지를 신청 조건, 금액, 신청 방법까지 한 번에 정리했어요. 서...</text>
+  <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">2026년 청년 지원금 5가지를 신청 조건, 금액, 신청 방법, 흔한 실수까지 한 번에 정...</text>
 
   <!-- 태그 카드 -->
   <rect x="80" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
