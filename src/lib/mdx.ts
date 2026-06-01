@@ -32,13 +32,25 @@ function calculateReadingTime(content: string): number {
   return Math.max(1, Math.ceil(words / wordsPerMinute));
 }
 
-export function getAllPosts(): PostMeta[] {
-  const posts: PostMeta[] = [];
+// Build-time cache: 모든 MDX를 한 번만 walk + parse 하고 모든 호출에서 재사용.
+// 캐시 없을 때 페이지당 getAllPosts/getPostBySlug/getPostsByCategory/getRelatedPosts/getAdjacentPosts가
+// 매번 content 트리 전체를 readdir + readFileSync + matter() 재파싱 → 글 수 × 페이지 수의 N² 파싱으로
+// 빌드가 느려짐. (ai-blog / saju-blog _allPostsCache 패턴 미러)
+// 캐시는 content 포함 전체 Post(getPostBySlug 반환형)를 slug 키로 저장. getAllPosts는 거기서 meta만 투영.
+let _allPostsCache: Map<string, Post> | null = null;
 
-  if (!fs.existsSync(contentDirectory)) return posts;
+// content 트리를 한 번만 walk 해서 slug → Post 맵을 만든다.
+// readdir 순서를 그대로 유지하고, 같은 slug가 여러 카테고리에 있으면 먼저 만난 것(원래 getPostBySlug break 동작)을 보존.
+function loadAllPosts(): Map<string, Post> {
+  if (_allPostsCache) return _allPostsCache;
+
+  const cache = new Map<string, Post>();
+  if (!fs.existsSync(contentDirectory)) {
+    _allPostsCache = cache;
+    return cache;
+  }
 
   const categoryDirs = fs.readdirSync(contentDirectory);
-
   for (const dir of categoryDirs) {
     const dirPath = path.join(contentDirectory, dir);
     if (!fs.statSync(dirPath).isDirectory()) continue;
@@ -46,50 +58,14 @@ export function getAllPosts(): PostMeta[] {
     const files = fs.readdirSync(dirPath).filter((f) => f.endsWith(".mdx"));
 
     for (const file of files) {
-      const filePath = path.join(dirPath, file);
-      const fileContents = fs.readFileSync(filePath, "utf-8");
-      const { data, content } = matter(fileContents);
       const slug = file.replace(/\.mdx$/, "");
-
-      posts.push({
-        title: data.title || "",
-        description: data.description || "",
-        date: data.date || "",
-        category: data.category || dir,
-        keywords: data.keywords || [],
-        image: data.image || "/images/default-og.png",
-        author: data.author || "쉬운재테크",
-        faq: data.faq,
-        tags: data.tags,
-        relatedPosts: data.relatedPosts,
-        noindex: data.noindex,
-        slug,
-        readingTime: calculateReadingTime(content),
-      });
-    }
-  }
-
-  return posts.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
-}
-
-export function getPostBySlug(slug: string): Post | null {
-  const allCategories = fs.existsSync(contentDirectory)
-    ? fs.readdirSync(contentDirectory)
-    : [];
-
-  for (const dir of allCategories) {
-    const dirPath = path.join(contentDirectory, dir);
-    if (!fs.statSync(dirPath).isDirectory()) continue;
-
-    const filePath = path.join(dirPath, `${slug}.mdx`);
-    if (fs.existsSync(filePath)) {
+      if (cache.has(slug)) continue; // first category in readdir order wins
+      const filePath = path.join(dirPath, file);
       const fileContents = fs.readFileSync(filePath, "utf-8");
       const { data, content } = matter(fileContents);
       const fileStat = fs.statSync(filePath);
 
-      return {
+      cache.set(slug, {
         meta: {
           title: data.title || "",
           description: data.description || "",
@@ -107,11 +83,24 @@ export function getPostBySlug(slug: string): Post | null {
         },
         content,
         fileModified: fileStat.mtime.toISOString(),
-      };
+      });
     }
   }
 
-  return null;
+  _allPostsCache = cache;
+  return cache;
+}
+
+export function getAllPosts(): PostMeta[] {
+  const posts = Array.from(loadAllPosts().values()).map((p) => p.meta);
+
+  return posts.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+}
+
+export function getPostBySlug(slug: string): Post | null {
+  return loadAllPosts().get(slug) ?? null;
 }
 
 export function getPostsByCategory(category: string): PostMeta[] {
