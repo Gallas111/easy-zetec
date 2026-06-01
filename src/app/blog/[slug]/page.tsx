@@ -23,8 +23,14 @@ import ShareButtons from "@/components/ShareButtons";
 import AuthorCard from "@/components/AuthorCard";
 import Disclaimer from "@/components/Disclaimer";
 import Link from "next/link";
+import imageDims from "@/data/image-dims.json";
 
 export const dynamicParams = false;
+
+// Static body-image dimension map (built by scripts/gen-image-dims.py).
+// Injecting real width/height lets the browser reserve aspect-ratio space
+// (.prose img { max-width:100%; height:auto }) → zero CLS on body images.
+const IMG_DIMS = imageDims as Record<string, number[]>;
 
 export function generateStaticParams() {
   const posts = getAllPosts();
@@ -64,6 +70,26 @@ const mdxComponents = {
   Callout,
   ComparisonTable,
   KeyTakeaway,
+  img: ({
+    node,
+    ...props
+  }: React.ImgHTMLAttributes<HTMLImageElement> & { node?: unknown }) => {
+    void node;
+    const src = typeof props.src === "string" ? props.src : undefined;
+    // Korean filenames may arrive percent-encoded in the AST; fall back.
+    const dims = src
+      ? IMG_DIMS[src] ?? IMG_DIMS[decodeURIComponent(src)]
+      : undefined;
+    return (
+      <img
+        {...props}
+        alt={props.alt || ""}
+        {...(dims ? { width: dims[0], height: dims[1] } : {})}
+        loading="lazy"
+        decoding="async"
+      />
+    );
+  },
 };
 
 export default async function BlogPostPage({
