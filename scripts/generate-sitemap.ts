@@ -36,6 +36,7 @@ function generateSitemap() {
   entries.push(
     { url: "/", changefreq: "daily", priority: 1.0 },
     { url: "/blog", changefreq: "daily", priority: 0.8 },
+    { url: "/tools/dsr-calculator", changefreq: "monthly", priority: 0.8 },
     { url: "/about", changefreq: "yearly", priority: 0.3 },
     { url: "/privacy", changefreq: "yearly", priority: 0.3 },
     { url: "/terms", changefreq: "yearly", priority: 0.3 }
