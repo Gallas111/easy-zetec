@@ -33,18 +33,16 @@ function principalFromMonthly(monthly: number, annualRate: number, years: number
 type RateType = "variable" | "mixed" | "periodic";
 type Region = "metro" | "local";
 
-// 스트레스 DSR 3단계(2025.7.1~, 작성 시점 2026.6 현행) 기준 가산금리 산정
-// 기본 스트레스 금리 1.5%
-// 금리유형별 적용비율: 변동 100% / 혼합형 60% / 주기형 30%
-// 지역: 수도권·규제지역 3단계(100%) / 지방 주담대는 2026 상반기 2단계(0.75%, 50%) 한시 유예
+// 스트레스 DSR 가산금리 산정 (작성 시점 2026.6 현행)
+// 기본 스트레스 금리 1.5% (3단계, 2025.7.1~). 단 2025.10.16 '10.15 부동산대책'으로
+// 수도권·규제지역 주택담보대출 스트레스 하한금리가 3.0%p로 상향(변동형 기준).
+// 지방 주담대: 2026.1.1~6.30 한시 2단계(0.75%p) 유예.
+// 금리유형별 적용비율(대표값, 고정기간/변동주기 5~9년 기준): 변동 100% / 혼합 60% / 주기 30%.
 function stressRate(rateType: RateType, region: Region): number {
-  const BASE = 1.5; // %p
   const typeMul = rateType === "variable" ? 1.0 : rateType === "mixed" ? 0.6 : 0.3;
-  if (region === "local") {
-    // 지방 주담대: 2026.1.1~6.30 한시 2단계(기본 스트레스 금리의 50%) 적용
-    return BASE * 0.5 * typeMul;
-  }
-  return BASE * typeMul;
+  // 수도권·규제지역 주담대 3.0%p(2025.10.16~) / 지방 주담대 0.75%p(한시 유예)
+  const baseRate = region === "local" ? 0.75 : 3.0; // %p (변동형 기준)
+  return baseRate * typeMul;
 }
 
 export default function DsrCalculator() {
@@ -411,7 +409,7 @@ export default function DsrCalculator() {
           </div>
 
           <p className="text-[11px] leading-relaxed text-[var(--color-text-light)]">
-            본 계산기는 원리금균등상환을 가정한 추정치이며, 실제 한도는 은행별 내규·DTI·LTV·보증한도 등에 따라 달라질 수 있어요. 스트레스 금리는 2026년 6월 기준 3단계(기본 1.5%) 가정이며, 지방 주담대는 2026년 상반기 한시 2단계가 반영돼요.
+            본 계산기는 원리금균등상환을 가정한 추정치이며, 실제 한도는 은행별 내규·DTI·LTV·보증한도 등에 따라 달라질 수 있어요. 스트레스 금리는 2026년 6월 기준 수도권·규제지역 주담대 3.0%p(변동형), 지방 주담대 한시 0.75%p를 반영하며, 혼합형·주기형은 적용비율(약 60%·30%, 고정기간에 따라 상이)을 곱해요. 정책은 변경될 수 있어요.
           </p>
         </div>
       </div>
