@@ -129,11 +129,17 @@ export default async function BlogPostPage({
       name: "쉬운재테크 편집팀",
       url: "https://www.easyzetec.com/about",
       description: "경제·금융 전공 편집진",
+      publishingPrinciples: "https://www.easyzetec.com/editorial-policy",
     },
     publisher: {
       "@type": "Organization",
+      "@id": "https://www.easyzetec.com/#organization",
       name: "쉬운재테크",
       url: "https://www.easyzetec.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.easyzetec.com/icon-512x512.png",
+      },
     },
     image: post.meta.image,
   };

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "소개 — 쉬운재테크 편집팀",
@@ -50,6 +51,11 @@ export default function AboutPage() {
             장단점을 함께 다룹니다.
           </li>
         </ul>
+        <p>
+          사실검증 절차, 수치 출처 원칙, 수정 이력 정책의 자세한 내용은{" "}
+          <Link href="/editorial-policy">편집·출처 정책</Link> 페이지에 공개되어
+          있습니다.
+        </p>
 
         <h2>편집팀 구성</h2>
         <ul>

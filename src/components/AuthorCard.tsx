@@ -23,6 +23,7 @@ export default function AuthorCard({ date, readingTime }: AuthorCardProps) {
                     {date && <span>📅 {date}</span>}
                     {readingTime && <span>⏱️ {readingTime}</span>}
                     <Link href="/about" className="text-blue-500 hover:underline font-medium">편집 원칙 보기</Link>
+                    <Link href="/editorial-policy" className="text-blue-500 hover:underline font-medium">편집·출처 정책</Link>
                 </div>
             </div>
         </div>

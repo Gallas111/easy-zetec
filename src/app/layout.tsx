@@ -84,14 +84,31 @@ export default function RootLayout({
     url: "https://www.easyzetec.com",
     description:
       "재테크 초보도 쉽게 따라할 수 있는 저축, 투자, 절세 가이드",
-    publisher: {
-      "@type": "Organization",
-      name: "쉬운재테크",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.easyzetec.com/icon-512x512.png",
-      },
+    publisher: { "@id": "https://www.easyzetec.com/#organization" },
+  };
+
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.easyzetec.com/#organization",
+    name: "쉬운재테크",
+    url: "https://www.easyzetec.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.easyzetec.com/icon-512x512.png",
+      width: 512,
+      height: 512,
     },
+    description:
+      "재테크 초보를 위한 저축·투자·절세 정보 블로그. 금융위원회·한국은행·국세청·전국은행연합회 등 1차 출처를 기준으로 콘텐츠를 작성·검증합니다.",
+    email: "kingyw17@gmail.com",
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      email: "kingyw17@gmail.com",
+      availableLanguage: "Korean",
+    },
+    publishingPrinciples: "https://www.easyzetec.com/editorial-policy",
   };
 
   return (
@@ -126,6 +143,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
         />
       </head>
       <body className="antialiased min-h-screen flex flex-col">

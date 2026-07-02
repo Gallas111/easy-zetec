@@ -56,6 +56,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/editorial-policy"
+                  className="text-gray-300 hover:text-[var(--color-primary-light)] text-sm transition-colors"
+                >
+                  편집·출처 정책
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/privacy"
                   className="text-gray-300 hover:text-[var(--color-primary-light)] text-sm transition-colors"
                 >
