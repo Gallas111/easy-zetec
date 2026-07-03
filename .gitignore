@@ -47,3 +47,11 @@ keys.txt
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# build-generated OG images (2026-07-03 cleanup)
+# generate-images.ts (in `build`) regenerates root {slug}.png/.svg for every post each build,
+# and CF Pages regenerates them at deploy. Posts reference /images/posts/* thumbnails, so these
+# root artifacts are build output — not source. Keeps generated orphans out of git status.
+# (Already-committed root images stay tracked; only untracked/new generated ones are ignored.)
+/public/images/*.png
+/public/images/*.svg
