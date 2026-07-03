@@ -101,11 +101,10 @@ export default function RootLayout({
     },
     description:
       "재테크 초보를 위한 저축·투자·절세 정보 블로그. 금융위원회·한국은행·국세청·전국은행연합회 등 1차 출처를 기준으로 콘텐츠를 작성·검증합니다.",
-    email: "kingyw17@gmail.com",
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer support",
-      email: "kingyw17@gmail.com",
+      url: "https://www.easyzetec.com/contact",
       availableLanguage: "Korean",
     },
     publishingPrinciples: "https://www.easyzetec.com/editorial-policy",

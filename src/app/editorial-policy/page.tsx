@@ -101,7 +101,7 @@ export default function EditorialPolicyPage() {
           </li>
           <li>
             독자 제보로 오류가 확인된 경우에도 동일한 절차로 정정합니다. 제보는{" "}
-            <Link href="/contact">문의 페이지</Link> 또는 이메일(kingyw17@gmail.com)로
+            <Link href="/contact">문의 페이지</Link>를 통해
             받습니다.
           </li>
         </ul>
