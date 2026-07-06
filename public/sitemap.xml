@@ -19,7 +19,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.easyzetec.com/tools/savings-compound-calculator</loc>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.easyzetec.com/about</loc>
+    
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.easyzetec.com/editorial-policy</loc>
     
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -199,6 +211,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.easyzetec.com/blog/overseas-travel-exchange-travel-card-comparison-2026</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.easyzetec.com/blog/reducing-living-expenses</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -243,6 +261,12 @@
   <url>
     <loc>https://www.easyzetec.com/blog/tax-refund-allocation-5step-decision-tree-2026</loc>
     <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.easyzetec.com/blog/unemployment-benefit-conditions-amount-2026-self-diagnosis</loc>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -703,6 +727,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.easyzetec.com/blog/depositor-protection-limit-100m-split-strategy-2026</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.easyzetec.com/blog/dollar-foreign-currency-deposit-exchange-tech-2026</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -879,6 +909,12 @@
   <url>
     <loc>https://www.easyzetec.com/blog/credit-card-income-deduction</loc>
     <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.easyzetec.com/blog/crypto-tax-2027-preparation-guide</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
