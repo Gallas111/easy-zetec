@@ -60,9 +60,8 @@ export default function AboutPage() {
         <h2>편집팀 구성</h2>
         <ul>
           <li>
-            <strong>금융 자문진</strong> — 한국 금융업·세무 분야 실무 경험과
-            공식 자료(국세청·금감원·한국은행 통계)를 기반으로 콘텐츠 정확성을
-            검수합니다.
+            <strong>공식 자료 기반</strong> — 국세청·금감원·한국은행 통계 등
+            공식 자료를 콘텐츠의 근거 자료로 삼습니다.
           </li>
           <li>
             <strong>콘텐츠 에디터</strong> — 어려운 금융 용어를 일상 언어로
@@ -88,8 +87,8 @@ export default function AboutPage() {
             <strong>초안 작성</strong> — 실제 시뮬레이션과 사례 중심으로 작성.
           </li>
           <li>
-            <strong>전문 검수</strong> — 금융 자문진이 수치·법령·세율의 최신성과
-            정확성을 점검.
+            <strong>교차 확인</strong> — 공식 자료와 은행·증권사 상품 안내를
+            대조해 수치·법령·세율의 최신성을 확인.
           </li>
           <li>
             <strong>발행·업데이트</strong> — 세법·금리 변동을 반영해 주기적으로
