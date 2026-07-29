@@ -94,8 +94,12 @@ async function searchWeb(query: string): Promise<string> {
     const snippets: string[] = [];
 
     if (data.organic_results) {
+      // 출처 URL(r.link)을 반드시 함께 남긴다. 이걸 버리면 리서치 자료가
+      // "제목: 스니펫" 뿐인 무출처 텍스트가 되고, 그 위에서 쓴 글은 어느 기관이
+      // 무엇을 말했는지 대조할 방법이 없어진다. 2026-07 감사에서 확인된 이 레포
+      // 계열 최대 오류 유형이 출처 오귀속이었고, 그 뿌리가 여기다.
       for (const r of data.organic_results.slice(0, 5)) {
-        snippets.push(`- ${r.title}: ${r.snippet || ''}`);
+        snippets.push(`- ${r.title}: ${r.snippet || ''}${r.link ? `\n  출처: ${r.link}` : ''}`);
       }
     }
 
