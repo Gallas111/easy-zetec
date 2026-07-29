@@ -52,10 +52,10 @@ jobs:
         env:
           POST_COUNT: ${{ github.event.inputs.post_count || '5' }}
 
-      - name: Refine content
-        if: steps.generate.outputs.POST_COUNT != '0'
-        run: npx tsx scripts/content-refiner.ts
-        continue-on-error: true
+      # content-refiner 스텝 제거 (2026-07-29).
+      # 제목에 "완벽 가이드"·"0원으로" 같은 파워워드를 쓰라고 지시하는 스크립트라
+      # 생성 프롬프트의 제목 규칙·발행 게이트의 가격 주장 검사와 정면으로 충돌한다.
+      # content/ 전체를 순회하며 재작성하므로 게이트 통과 글까지 다시 쓴다. 제거가 정공법이다.
 
       - name: Optimize internal links
         if: steps.generate.outputs.POST_COUNT != '0'
@@ -65,6 +65,17 @@ jobs:
       - name: Generate images
         if: steps.generate.outputs.POST_COUNT != '0'
         run: npx tsx scripts/generate-images.ts
+
+      # 발행 게이트 — internal-linker 뒤, generate-images 뒤, git add 앞.
+      # generate-images 뒤여야 하는 이유: 봇 신규글의 frontmatter image 는
+      # /images/<slug>.png 를 가리키는데 그 파일을 이 스텝이 만든다. 앞에 두면
+      # 전 신규글이 broken-image 로 격리된다.
+      # continue-on-error 를 붙이지 말 것 — 붙이면 fail-closed 가 무의미해진다.
+      - name: Publish Gate
+        if: steps.generate.outputs.POST_COUNT != '0'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: npx tsx scripts/publish-gate.ts
 
       - name: Generate sitemap
         run: npx tsx scripts/generate-sitemap.ts
