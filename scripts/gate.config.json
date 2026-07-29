@@ -1,0 +1,7 @@
+{
+  "minKorean": 3000,
+  "thumbnailKey": "image",
+  "validCategories": ["basics","savings","investing","tax","real-estate"],
+  "factCheck": "off",
+  "researchProducer": "scripts/generate-seo-post.ts"
+}

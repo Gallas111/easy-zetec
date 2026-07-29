@@ -55,3 +55,7 @@ next-env.d.ts
 # (Already-committed root images stay tracked; only untracked/new generated ones are ignored.)
 /public/images/*.png
 /public/images/*.svg
+
+# 발행 게이트 산출물
+quarantine/
+.research-cache/

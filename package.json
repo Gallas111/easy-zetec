@@ -11,7 +11,9 @@
     "blog:refine": "npx tsx scripts/content-refiner.ts",
     "blog:link": "npx tsx scripts/internal-linker.ts",
     "blog:health": "npx tsx scripts/health-check.ts",
-    "growth:report": "npx tsx scripts/generate-focused-report.ts"
+    "growth:report": "npx tsx scripts/generate-focused-report.ts",
+    "blog:gate": "tsx scripts/publish-gate.ts",
+    "blog:validate": "tsx scripts/validate-links.ts"
   },
   "dependencies": {
     "@giscus/react": "^3.1.0",
