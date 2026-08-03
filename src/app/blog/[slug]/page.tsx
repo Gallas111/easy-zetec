@@ -32,6 +32,18 @@ export const dynamicParams = false;
 // (.prose img { max-width:100%; height:auto }) → zero CLS on body images.
 const IMG_DIMS = imageDims as Record<string, number[]>;
 
+// og:image 서술자. 실측 치수를 알면 넣고, 모르면 크기를 아예 생략한다.
+// 2026-08-03 이전에는 1200x630을 하드코딩했는데 실제 썸네일은 800x533~1792x1024로 제각각이라
+// 모든 글에서 선언과 자산이 어긋나 있었다. 틀린 값을 주장하느니 생략하는 편이 낫다.
+function ogImageDescriptor(image: string | undefined, alt: string, origin: string) {
+    const path = image || "/og-image.png";
+    const url = path.startsWith("http") ? path : `${origin}${path}`;
+    const d = IMG_DIMS[path];
+    return d && d.length === 2
+        ? { url, width: d[0], height: d[1], alt }
+        : { url, alt };
+}
+
 export function generateStaticParams() {
   const posts = getAllPosts();
   return posts.map((post) => ({ slug: post.slug }));
@@ -58,7 +70,7 @@ export async function generateMetadata({
       description: post.meta.description,
       type: "article",
       publishedTime: post.meta.date,
-      images: [{ url: `https://www.easyzetec.com${post.meta.image}`, width: 1200, height: 630, alt: post.meta.title }],
+      images: [ogImageDescriptor(post.meta.image, post.meta.title, "https://www.easyzetec.com")],
     },
     ...(post.meta.noindex && {
       robots: { index: false, follow: false },

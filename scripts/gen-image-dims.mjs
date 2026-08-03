@@ -31,6 +31,8 @@ const OUT = join(ROOT, "src", "data", "image-dims.json");
 // Anchor on the image URL group "(/images/...)" and let the alt span (lazily,
 // including newlines) up to the "]" that immediately precedes it.
 const IMG_RE = /!\[[\s\S]*?\]\((\/images\/[^)\s]+)\)/g;
+// frontmatter 의 image: / thumbnail: 값 (따옴표 유무 모두)
+const FM_IMG_RE = /^\s*(?:image|thumbnail):\s*['"]?(\/images\/[^'"\s]+)/gm;
 
 function walkMdx(dir) {
   const out = [];
@@ -49,6 +51,13 @@ const refs = new Set();
 for (const file of walkMdx(CONTENT)) {
   const text = readFileSync(file, "utf-8");
   for (const m of text.matchAll(IMG_RE)) {
+    refs.add(m[1]);
+  }
+  // 2026-08-03 추가: frontmatter 썸네일도 수집한다.
+  // og:image 의 width/height 를 실측값으로 내보내려면 썸네일이 이 맵에 있어야 한다.
+  // (예전에는 1200x630 을 하드코딩했는데 실제 자산은 800x533~1792x1024 로 제각각이었다.)
+  const fm = text.split("---")[1] || "";
+  for (const m of fm.matchAll(FM_IMG_RE)) {
     refs.add(m[1]);
   }
 }

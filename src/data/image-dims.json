@@ -1,5 +1,161 @@
 {
+"/images/acquisition-tax-reduction.png": [
+1200,
+630
+],
+"/images/auto-savings.png": [
+1200,
+630
+],
+"/images/best-emergency-fund-account.png": [
+1200,
+630
+],
+"/images/best-savings-2026.png": [
+1200,
+630
+],
+"/images/blue-chip-investment.png": [
+1200,
+630
+],
+"/images/bond-investment.png": [
+1200,
+630
+],
+"/images/buy-house-cost.png": [
+1200,
+630
+],
+"/images/check-card-credit-score-newcomer-5-tips.png": [
+1200,
+630
+],
+"/images/cma-best-account.png": [
+1200,
+630
+],
+"/images/comprehensive-income-tax-saving-5-deductions.png": [
+1200,
+630
+],
+"/images/credit-card-income-deduction.png": [
+1200,
+630
+],
+"/images/credit-score-600-to-800-6month-experience.png": [
+1200,
+630
+],
+"/images/deposit-maturity-next-step-4-options-2026.png": [
+1200,
+630
+],
+"/images/deposit-vs-saving-may-2026-compare.png": [
+1200,
+630
+],
+"/images/dividend-etf.png": [
+1200,
+630
+],
+"/images/dollar-cost-averaging.png": [
+1200,
+630
+],
+"/images/early-career-finance.png": [
+1200,
+630
+],
+"/images/earned-income-tax-credit-2026-spouse-simulation.png": [
+1200,
+630
+],
+"/images/els-beginner-warnings-knock-in-no-knock-in.png": [
+1200,
+630
+],
+"/images/etf-investing-beginners-2026.png": [
+1200,
+630
+],
+"/images/financial-terms-for-beginners.png": [
+1200,
+630
+],
+"/images/first-home-buying-guide.png": [
+1200,
+630
+],
+"/images/first-time-home-loan.png": [
+1200,
+630
+],
+"/images/fixed-variable-expenses.png": [
+1200,
+630
+],
+"/images/freelancer-comprehensive-income-tax-simple-vs-standard-expense-rate.png": [
+1200,
+630
+],
+"/images/fund-investment.png": [
+1200,
+630
+],
+"/images/gold-investment-methods-comparison-guide.png": [
+1200,
+630
+],
+"/images/home-buying-seed-money.png": [
+1200,
+630
+],
+"/images/home-loan-types.png": [
+1200,
+630
+],
 "/images/hometax-income-tax-first-time-screen-guide.png": [
+1200,
+630
+],
+"/images/housing-subscription-deduction.png": [
+1200,
+630
+],
+"/images/housing-subscription-guide.png": [
+1200,
+630
+],
+"/images/housing-subscription-strategy-2026.png": [
+1200,
+630
+],
+"/images/how-to-budget-book.png": [
+1200,
+630
+],
+"/images/how-to-buy-stocks.png": [
+1200,
+630
+],
+"/images/how-to-pick-stocks.png": [
+1200,
+630
+],
+"/images/how-to-save-money-salary.png": [
+1200,
+630
+],
+"/images/income-deduction-vs-tax-credit.png": [
+1200,
+630
+],
+"/images/income-tax-brackets.png": [
+1200,
+630
+],
+"/images/increase-housing-subscription-score.png": [
 1200,
 630
 ],
@@ -275,11 +431,79 @@
 800,
 580
 ],
+"/images/isa-account-2026-beginner-guide.png": [
+1200,
+630
+],
+"/images/isa-account-guide.png": [
+1200,
+630
+],
+"/images/jaetec-start-guide.png": [
+1200,
+630
+],
+"/images/jeonse-fraud-prevention.png": [
+1200,
+630
+],
+"/images/jeonse-fund-loan.png": [
+1200,
+630
+],
+"/images/jeonse-insurance-rejection-7-signs.png": [
+1200,
+630
+],
 "/images/jeonse-loan-2026-three-programs-comparison.png": [
 1200,
 630
 ],
+"/images/jeonse-refund.png": [
+1200,
+630
+],
+"/images/jeonse-vs-monthly-rent.png": [
+1200,
+630
+],
+"/images/jjantech.png": [
+1200,
+630
+],
+"/images/main-bank-switch-2026-may-event-guide.png": [
+1200,
+630
+],
+"/images/medical-expense-tax-credit.png": [
+1200,
+630
+],
 "/images/monthly-300k-5year-etf-auto-investment.png": [
+1200,
+630
+],
+"/images/mortgage-refinance-skip-cases-2026.png": [
+1200,
+630
+],
+"/images/mortgage-tax-benefit.png": [
+1200,
+630
+],
+"/images/net-worth.png": [
+1200,
+630
+],
+"/images/newlywed-special-supply-2026-vs-youth-housing-dream-comparison.png": [
+1200,
+630
+],
+"/images/pension-savings.png": [
+1200,
+630
+],
+"/images/portfolio-making.png": [
 1200,
 630
 ],
@@ -299,6 +523,14 @@
 1080,
 811
 ],
+"/images/posts/5th-gen-health-insurance-switch-2026-simulation-thumb.webp": [
+1080,
+657
+],
+"/images/posts/acquisition-tax-calculation-2026-thumb.webp": [
+1080,
+720
+],
 "/images/posts/bank-account-splitting-guide-2026-body-1.webp": [
 1080,
 720
@@ -307,6 +539,10 @@
 1080,
 720
 ],
+"/images/posts/bank-account-splitting-guide-2026-thumb.webp": [
+1080,
+607
+],
 "/images/posts/budget-app-recommendation-5-guide-bot-body-1.webp": [
 1080,
 720
@@ -314,6 +550,10 @@
 "/images/posts/budget-app-recommendation-5-guide-bot-body-2.webp": [
 1080,
 720
+],
+"/images/posts/budget-app-recommendation-5-guide-thumb.webp": [
+1080,
+708
 ],
 "/images/posts/car-insurance-discount-riders-mileage-blackbox-child-2026-body-1.webp": [
 1080,
@@ -359,6 +599,10 @@
 1280,
 731
 ],
+"/images/posts/check-card-benefits-comparison-2026-thumb.webp": [
+1080,
+720
+],
 "/images/posts/check-card-credit-score-newcomer-5-tips-thumb.webp": [
 1080,
 608
@@ -371,11 +615,19 @@
 400,
 267
 ],
+"/images/posts/checklist-card-benefits-comparison-2026-thumb.webp": [
+1080,
+720
+],
 "/images/posts/child-gift-tax-saving-2026-guide-bot-body-1.webp": [
 1080,
 716
 ],
 "/images/posts/child-gift-tax-saving-2026-guide-bot-body-2.webp": [
+1080,
+720
+],
+"/images/posts/child-gift-tax-saving-2026-guide-thumb.webp": [
 1080,
 720
 ],
@@ -396,6 +648,10 @@
 563
 ],
 "/images/posts/cma-vs-fixed-deposit-comparison-bot-body-1.webp": [
+1080,
+720
+],
+"/images/posts/cma-vs-fixed-deposit-comparison-thumb.webp": [
 1080,
 720
 ],
@@ -503,6 +759,10 @@
 1080,
 720
 ],
+"/images/posts/credit-check-card-tax-deduction-thumb.webp": [
+1080,
+720
+],
 "/images/posts/credit-score-600-to-800-6month-experience-body-1.webp": [
 1080,
 608
@@ -535,6 +795,10 @@
 1080,
 720
 ],
+"/images/posts/credit-score-boost-with-credit-card-thumb.webp": [
+1080,
+719
+],
 "/images/posts/credit-score-free-check-and-boost-2026-guide-body-1.webp": [
 1080,
 720
@@ -552,6 +816,10 @@
 720
 ],
 "/images/posts/credit-score-improvement-7-tips-bot-body-2.webp": [
+1080,
+720
+],
+"/images/posts/credit-score-improvement-7-tips-thumb.webp": [
 1080,
 720
 ],
@@ -598,6 +866,10 @@
 "/images/posts/deposit-ladder-strategy-2026-fomc-hawkish-dot-plot-body-2.webp": [
 1080,
 721
+],
+"/images/posts/deposit-ladder-strategy-2026-fomc-hawkish-dot-plot-thumb.webp": [
+1080,
+720
 ],
 "/images/posts/deposit-maturity-auto-renewal-trap-2026-body-1.webp": [
 1080,
@@ -647,6 +919,10 @@
 1080,
 810
 ],
+"/images/posts/depositor-protection-limit-100m-split-strategy-2026-thumb.webp": [
+1080,
+720
+],
 "/images/posts/didimdol-bogeumjari-loan-2026-policy-mortgage-conditions-body-1.webp": [
 1080,
 811
@@ -663,6 +939,10 @@
 1280,
 731
 ],
+"/images/posts/dividend-stock-beginner-guide-2026-thumb.webp": [
+1080,
+720
+],
 "/images/posts/dividend-stock-investing-beginner-2026-bot-body-1.webp": [
 1080,
 720
@@ -671,13 +951,25 @@
 1080,
 720
 ],
+"/images/posts/dividend-stock-investing-beginner-2026-thumb.webp": [
+1080,
+720
+],
 "/images/posts/dividend-stock-investing-starter-bot-body-1.webp": [
+1080,
+720
+],
+"/images/posts/dividend-stock-investing-starter-thumb.webp": [
 1080,
 720
 ],
 "/images/posts/dividend-stock-recommendation-2026-body-1.webp": [
 1280,
 731
+],
+"/images/posts/dividend-stock-recommendation-2026-thumb.webp": [
+1080,
+720
 ],
 "/images/posts/dollar-foreign-currency-deposit-exchange-tech-2026-body-1.webp": [
 1080,
@@ -720,6 +1012,10 @@
 810
 ],
 "/images/posts/earned-income-tax-credit-2026-guide-bot-body-2.webp": [
+1080,
+720
+],
+"/images/posts/earned-income-tax-credit-2026-guide-thumb.webp": [
 1080,
 720
 ],
@@ -775,7 +1071,15 @@
 1080,
 720
 ],
+"/images/posts/etf-beginner-portfolio-3-types-thumb.webp": [
+1080,
+720
+],
 "/images/posts/etf-top-picks-beginner-2026-body-1.webp": [
+1080,
+720
+],
+"/images/posts/etf-top-picks-beginner-2026-thumb.webp": [
 1080,
 720
 ],
@@ -887,6 +1191,14 @@
 1080,
 608
 ],
+"/images/posts/gold-investment-method-comparison-2026-thumb.webp": [
+1080,
+720
+],
+"/images/posts/gold-investment-methods-comparison-thumb.webp": [
+1080,
+720
+],
 "/images/posts/gold-investment-purpose-based-5case-tax-fee-2026-body-1.webp": [
 1200,
 686
@@ -915,6 +1227,10 @@
 1080,
 759
 ],
+"/images/posts/health-insurance-november-settlement-comprehensive-income-tax-impact-5case-simulation-thumb.webp": [
+1080,
+720
+],
 "/images/posts/hidden-money-unclaimed-refund-7-places-checklist-2026-body-1.webp": [
 1200,
 800
@@ -936,6 +1252,10 @@
 720
 ],
 "/images/posts/high-yield-parking-account-comparison-2026-bot-body-1.webp": [
+1080,
+720
+],
+"/images/posts/high-yield-parking-account-comparison-2026-thumb.jpg": [
 1080,
 720
 ],
@@ -967,6 +1287,10 @@
 1080,
 720
 ],
+"/images/posts/housing-subscription-account-2024-change-thumb.webp": [
+1080,
+720
+],
 "/images/posts/housing-subscription-account-2026-priority-guide-body-1.webp": [
 1080,
 720
@@ -987,6 +1311,14 @@
 1080,
 720
 ],
+"/images/posts/housing-subscription-account-25man-strategy-2026-thumb.webp": [
+1080,
+720
+],
+"/images/posts/housing-subscription-safe-score-guide-thumb.webp": [
+1080,
+716
+],
 "/images/posts/housing-subscription-score-calculation-2026-bot-body-1.webp": [
 1080,
 608
@@ -994,6 +1326,10 @@
 "/images/posts/housing-subscription-score-calculation-2026-bot-body-2.webp": [
 1080,
 720
+],
+"/images/posts/housing-subscription-score-calculation-2026-thumb.webp": [
+1080,
+771
 ],
 "/images/posts/income-tax-filing-guide-freelancer-2026-bot-body-1.webp": [
 1080,
@@ -1003,9 +1339,17 @@
 1080,
 608
 ],
+"/images/posts/income-tax-filing-guide-freelancer-2026-thumb.webp": [
+1080,
+720
+],
 "/images/posts/income-tax-filing-target-check-2026-body-1.webp": [
 1080,
 1366
+],
+"/images/posts/income-tax-filing-target-check-2026-thumb.webp": [
+1080,
+720
 ],
 "/images/posts/income-tax-refund-may-guide-body-1.webp": [
 1080,
@@ -1075,6 +1419,10 @@
 1792,
 1024
 ],
+"/images/posts/irp-withdrawal-penalty-method-guide-thumb.webp": [
+1080,
+608
+],
 "/images/posts/isa-account-2026-beginner-guide-thumb.webp": [
 1080,
 608
@@ -1092,6 +1440,10 @@
 720
 ],
 "/images/posts/isa-account-maturity-strategy-guide-body-1.webp": [
+1280,
+731
+],
+"/images/posts/isa-account-maturity-strategy-guide-thumb.webp": [
 1280,
 731
 ],
@@ -1275,11 +1627,23 @@
 800,
 595
 ],
+"/images/posts/monthly-rent-tax-credit-conditions-thumb.webp": [
+800,
+533
+],
 "/images/posts/monthly-rent-tax-credit-guide-bot-body-1.webp": [
 1080,
 720
 ],
+"/images/posts/monthly-rent-tax-credit-guide-thumb.webp": [
+1080,
+720
+],
 "/images/posts/mortgage-loan-calculator-guide-2026-body-1.webp": [
+1080,
+720
+],
+"/images/posts/mortgage-loan-calculator-guide-2026-thumb.webp": [
 1080,
 720
 ],
@@ -1288,6 +1652,10 @@
 720
 ],
 "/images/posts/mortgage-rate-comparison-2026-guide-bot-body-2.webp": [
+1080,
+720
+],
+"/images/posts/mortgage-rate-comparison-2026-guide-thumb.webp": [
 1080,
 720
 ],
@@ -1415,6 +1783,10 @@
 1080,
 720
 ],
+"/images/posts/overseas-travel-duty-free-allowance-2026-self-diagnosis-thumb.webp": [
+1200,
+801
+],
 "/images/posts/overseas-travel-exchange-travel-card-comparison-2026-body-1.webp": [
 1200,
 799
@@ -1432,6 +1804,10 @@
 675
 ],
 "/images/posts/overseas-travel-insurance-credit-card-free-comparison-2026-body-2.webp": [
+1200,
+675
+],
+"/images/posts/overseas-travel-insurance-credit-card-free-comparison-2026-thumb.webp": [
 1200,
 675
 ],
@@ -1523,6 +1899,14 @@
 1080,
 720
 ],
+"/images/posts/real-estate-capital-gains-tax-exemption-thumb.webp": [
+1080,
+720
+],
+"/images/posts/refinance-mortgage-rate-reduction-guide-thumb.webp": [
+1080,
+720
+],
 "/images/posts/reits-investment-dividend-yield-guide-bot-body-1.webp": [
 1080,
 719
@@ -1535,15 +1919,27 @@
 1080,
 720
 ],
+"/images/posts/reits-investment-dividend-yield-guide-thumb.webp": [
+1080,
+720
+],
 "/images/posts/rent-tax-deduction-application-guide-body-1.webp": [
 1280,
 731
+],
+"/images/posts/rent-tax-deduction-application-guide-thumb.webp": [
+1080,
+720
 ],
 "/images/posts/rental-contract-checklist-10-bot-body-1.webp": [
 1080,
 608
 ],
 "/images/posts/rental-contract-checklist-10-bot-body-2.webp": [
+1080,
+720
+],
+"/images/posts/rental-contract-checklist-10-thumb.webp": [
 1080,
 720
 ],
@@ -1627,6 +2023,10 @@
 1080,
 721
 ],
+"/images/posts/retirement-pension-default-option-2026-may-1year-yield-simulation-thumb.webp": [
+1080,
+720
+],
 "/images/posts/retirement-pension-in-kind-transfer-2026-guide-body-1.webp": [
 1792,
 1024
@@ -1679,6 +2079,10 @@
 1080,
 720
 ],
+"/images/posts/savings-bank-deposit-rate-comparison-2026-thumb.webp": [
+1080,
+720
+],
 "/images/posts/savings-preferential-rate-maximize-2026-body-1.webp": [
 1080,
 720
@@ -1715,6 +2119,14 @@
 1280,
 731
 ],
+"/images/posts/savings-rate-comparison-2026-guide-thumb.webp": [
+1080,
+720
+],
+"/images/posts/savings-rate-comparison-2026-thumb.webp": [
+1080,
+460
+],
 "/images/posts/savings-vs-deposit-difference-guide-bot-body-1.webp": [
 1080,
 460
@@ -1722,6 +2134,10 @@
 "/images/posts/savings-vs-deposit-difference-guide-bot-body-2.webp": [
 1080,
 720
+],
+"/images/posts/savings-vs-deposit-difference-guide-thumb.webp": [
+1080,
+665
 ],
 "/images/posts/savings-windmill-12-account-maturity-cashflow-2026-body-1.webp": [
 1080,
@@ -1734,6 +2150,18 @@
 "/images/posts/savings-windmill-12-account-maturity-cashflow-2026-thumb.webp": [
 1080,
 721
+],
+"/images/posts/severance-pay-calculation-tax-guide-thumb.webp": [
+1080,
+608
+],
+"/images/posts/sme-youth-income-tax-reduction-guide-thumb.webp": [
+1080,
+608
+],
+"/images/posts/stock-beginner-guide-brokerage-first-buy-thumb.webp": [
+1080,
+608
 ],
 "/images/posts/stock-circuit-breaker-sidecar-crash-response-2026-body-1.webp": [
 1200,
@@ -1752,6 +2180,10 @@
 720
 ],
 "/images/posts/stress-dsr-3-stage-mortgage-limit-2026-bot-body-2.webp": [
+1080,
+810
+],
+"/images/posts/stress-dsr-3-stage-mortgage-limit-2026-thumb.webp": [
 1080,
 810
 ],
@@ -1851,6 +2283,14 @@
 1792,
 1024
 ],
+"/images/posts/unranked-housing-subscription-jupjup-2026-guide-thumb.webp": [
+1792,
+1024
+],
+"/images/posts/us-dividend-etf-recommendation-2026-thumb.webp": [
+1080,
+608
+],
 "/images/posts/us-stock-beginner-guide-2026-body-1.webp": [
 800,
 533
@@ -1858,6 +2298,14 @@
 "/images/posts/us-stock-beginner-guide-2026-body-2.webp": [
 800,
 533
+],
+"/images/posts/us-stock-beginner-guide-2026-thumb.webp": [
+800,
+533
+],
+"/images/posts/us-stock-beginner-start-guide-thumb.webp": [
+1080,
+720
 ],
 "/images/posts/us-stock-dividend-beginner-5-picks-guide-body-1.webp": [
 1080,
@@ -1876,6 +2324,10 @@
 1024
 ],
 "/images/posts/us-stock-exchange-fee-integrated-margin-2026-body-2.webp": [
+1792,
+1024
+],
+"/images/posts/us-stock-exchange-fee-integrated-margin-2026-thumb.webp": [
 1792,
 1024
 ],
@@ -1903,6 +2355,10 @@
 1080,
 720
 ],
+"/images/posts/us-stock-investing-beginner-guide-2026-thumb.webp": [
+1080,
+720
+],
 "/images/posts/us-stock-trading-hours-summer-time-2026-body-1.webp": [
 1080,
 720
@@ -1922,6 +2378,10 @@
 "/images/posts/vat-filing-period-method-guide-body-2.webp": [
 800,
 570
+],
+"/images/posts/vat-filing-period-method-guide-thumb.webp": [
+800,
+562
 ],
 "/images/posts/vat-filing-self-employed-mistake-prevention-guide-body-1.webp": [
 1080,
@@ -1951,6 +2411,10 @@
 1080,
 759
 ],
+"/images/posts/youth-doyak-account-2026-guide-thumb.webp": [
+1080,
+608
+],
 "/images/posts/youth-future-savings-2026-june-launch-leap-switch-guide-body-1.webp": [
 1080,
 720
@@ -1971,11 +2435,127 @@
 1080,
 608
 ],
+"/images/property-sale-steps.png": [
+1200,
+630
+],
+"/images/real-estate-investment-study.png": [
+1200,
+630
+],
+"/images/real-estate-market-outlook-2026.png": [
+1200,
+630
+],
+"/images/real-estate-small-invest.png": [
+1200,
+630
+],
+"/images/recommended-savings.png": [
+1200,
+630
+],
+"/images/reducing-living-expenses.png": [
+1200,
+630
+],
 "/images/regular-deposit-vs-cma-2026-comparison.png": [
 1200,
 630
 ],
+"/images/reits-investment.png": [
+1200,
+630
+],
+"/images/rent-tax-deduction.png": [
+1200,
+630
+],
+"/images/resident-registration-date.png": [
+1200,
+630
+],
 "/images/retirement-pay-tax-irp-2026-transfer.png": [
+1200,
+630
+],
+"/images/retirement-pension.png": [
+1200,
+630
+],
+"/images/save-seed-money.png": [
+1200,
+630
+],
+"/images/save-then-spend.png": [
+1200,
+630
+],
+"/images/saving-lump-sum.png": [
+1200,
+630
+],
+"/images/savings-challenge.png": [
+1200,
+630
+],
+"/images/savings-rate-compare.png": [
+1200,
+630
+],
+"/images/set-financial-goals.png": [
+1200,
+630
+],
+"/images/side-income.png": [
+1200,
+630
+],
+"/images/small-investment.png": [
+1200,
+630
+],
+"/images/split-accounts.png": [
+1200,
+630
+],
+"/images/stock-account-guide.png": [
+1200,
+630
+],
+"/images/stock-beginner-guide-start-2026.png": [
+1200,
+630
+],
+"/images/stock-beginner.png": [
+1200,
+630
+],
+"/images/tax-free-product-types.png": [
+1200,
+630
+],
+"/images/tax-refund.png": [
+1200,
+630
+],
+"/images/windmill-savings.png": [
+1200,
+630
+],
+"/images/year-end-tax-tips-2026.png": [
+1200,
+630
+],
+"/images/youth-leap-account.png": [
+1200,
+630
+],
+"/images/youth-subsidy-2026-application-guide.png": [
+1200,
+630
+],
+"/images/zetec-beginner-2026.png": [
 1200,
 630
 ]
