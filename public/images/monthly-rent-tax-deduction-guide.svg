@@ -19,11 +19,11 @@
   <text x="80" y="205" font-family="GmarketSansTTF,Arial,sans-serif" font-size="62" font-weight="900" fill="white">월세 세액공제 조건과 신청 방법</text>
 
   <!-- 강조 서브타이틀 -->
-  <rect x="80" y="228" width="559.0400000000002" height="64" rx="8" fill="#FBBF24"/>
-  <text x="359.5200000000001" y="276" font-family="GmarketSansTTF,Arial,sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">— 최대 750만원 돌려받기</text>
+  <rect x="80" y="228" width="505.70000000000005" height="64" rx="8" fill="#FBBF24"/>
+  <text x="332.85" y="276" font-family="GmarketSansTTF,Arial,sans-serif" font-size="42" font-weight="900" fill="#0f172a" text-anchor="middle">서류부터 경정청구까지</text>
 
   <!-- 설명 -->
-  <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">월세 세액공제의 조건, 신청 방법, 필요 서류를 총정리했습니다. 2026년 기준 최대 75...</text>
+  <text x="80" y="355" font-family="GmarketSansTTF,Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">월세 세액공제의 대상 조건과 공제율 15퍼센트·17퍼센트, 공제 대상 월세액 연 1,000...</text>
 
   <!-- 태그 카드 -->
   <rect x="80" y="420" width="220" height="80" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
